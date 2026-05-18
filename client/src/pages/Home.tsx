@@ -1,517 +1,212 @@
-/**
- * US Oyster News Hub — Home Page
- * Design: Tidal Dashboard (Coastal Editorial)
- * Palette: Deep Navy (#0D1B2A) + Sea-Glass Teal + Oyster Off-White + Amber
- * Layout: Fixed left sidebar (260px) + scrollable main content grid
- * Typography: Space Grotesk (headings) + Inter (body) + JetBrains Mono (refs)
- */
-
-import { useState, useMemo, useCallback } from "react";
+/*
+Tidal Dashboard home page: a persistent intelligence rail, dark estuary hero, compact searchable signal cards, and practical action panels.
+Does this component choice reinforce or dilute our design philosophy?
+*/
+import { useMemo, useState } from "react";
 import { Link } from "wouter";
-import { currentEdition, type NewsItem } from "@/lib/newsData";
-import {
-  Search,
-  AlertTriangle,
-  ExternalLink,
-  Calendar,
-  Briefcase,
-  ChevronRight,
-  BookOpen,
-  Layers,
-  Users,
-  Leaf,
-  FlaskConical,
-  FileText,
-  Wrench,
-  Archive,
-  Share2,
-  Copy,
-  Check,
-} from "lucide-react";
+import { AlertTriangle, Archive, BriefcaseBusiness, CalendarClock, CheckCircle2, Clipboard, ExternalLink, Filter, Search, Share2, Sparkles, Waves } from "lucide-react";
+import { calendarEvents, currentEdition, jobs, newsItems, oceanfarmrLogo, type Category, type NewsItem } from "@/lib/newsData";
 
-// ─── Category config ────────────────────────────────────────────────────────
+const categories: Array<"All" | Category> = ["All", "Industry", "Regulation", "Science", "Jobs", "Calendar"];
+const categoryClasses: Record<string, string> = {
+  Industry: "border-emerald-300/30 bg-emerald-300/10 text-emerald-100",
+  Regulation: "border-amber-300/35 bg-amber-300/12 text-amber-100",
+  Science: "border-cyan-300/30 bg-cyan-300/10 text-cyan-100",
+  Jobs: "border-violet-300/30 bg-violet-300/10 text-violet-100",
+  Calendar: "border-sky-300/30 bg-sky-300/10 text-sky-100",
+};
 
-const CATEGORIES = [
-  { key: "all", label: "All", icon: Layers },
-  { key: "Industry", label: "Industry", icon: Briefcase },
-  { key: "Science", label: "Science", icon: FlaskConical },
-  { key: "Regulations", label: "Regulations", icon: FileText },
-  { key: "Farm Management", label: "Farm Mgmt", icon: Wrench },
-  { key: "Community", label: "Community", icon: Users },
-  { key: "Ecosystem Services", label: "Ecosystem", icon: Leaf },
-];
-
-function categoryBadgeClass(category: string): string {
-  const map: Record<string, string> = {
-    Industry: "badge-industry",
-    Science: "badge-science",
-    Regulations: "badge-regulations",
-    "Farm Management": "badge-farm",
-    Community: "badge-community",
-    "Ecosystem Services": "badge-ecosystem",
-    Employment: "badge-employment",
-  };
-  return map[category] ?? "badge-employment";
+function daysUntil(isoDate: string) {
+  const diff = new Date(isoDate).getTime() - Date.now();
+  return Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
 }
 
-// ─── Highlight helper ────────────────────────────────────────────────────────
+function copyEdition() {
+  const text = `${currentEdition.title} | ${currentEdition.date}\n${currentEdition.headline}\n\n${window.location.href}`;
+  navigator.clipboard?.writeText(text);
+}
 
-function highlight(text: string, query: string): React.ReactNode {
-  if (!query.trim()) return text;
-  const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi");
-  const parts = text.split(regex);
-  return parts.map((part, i) =>
-    regex.test(part) ? (
-      <mark key={i} className="bg-teal-500/30 text-teal-200 rounded-sm px-0.5">
-        {part}
-      </mark>
-    ) : (
-      part
-    )
+function ShellBadge({ category, urgent }: { category: string; urgent?: boolean }) {
+  return (
+    <span className={`status-pill ${categoryClasses[category] ?? "border-white/20 bg-white/10 text-white"}`}>
+      {urgent ? <AlertTriangle className="h-3.5 w-3.5" /> : <CheckCircle2 className="h-3.5 w-3.5" />}
+      {urgent ? "Urgent · " : ""}{category}
+    </span>
   );
 }
 
-// ─── Countdown hook ──────────────────────────────────────────────────────────
-
-function useCountdown(isoDate: string): string {
-  const target = new Date(isoDate + "T00:00:00");
-  const now = new Date();
-  const diff = target.getTime() - now.getTime();
-  if (diff <= 0) return "Today";
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  if (days === 1) return "Tomorrow";
-  return `${days} days`;
+function Sidebar({ activeFilter, setActiveFilter }: { activeFilter: "All" | Category; setActiveFilter: (value: "All" | Category) => void }) {
+  return (
+    <aside className="lg:sticky lg:top-0 lg:h-screen border-b lg:border-b-0 lg:border-r border-white/10 bg-sidebar/80 backdrop-blur-2xl px-5 py-6 lg:w-[300px] flex-shrink-0">
+      <a href="https://oceanfarmr.com" target="_blank" rel="noopener noreferrer" className="inline-flex opacity-90 transition hover:opacity-100">
+        <img src={oceanfarmrLogo} alt="Oceanfarmr" className="h-6 w-auto" />
+      </a>
+      <div className="mt-8">
+        <p className="label-caps">US Oyster</p>
+        <h1 className="mt-2 text-3xl font-semibold leading-none tracking-[-0.04em]">AI Edition</h1>
+        <p className="mt-3 text-sm text-muted-foreground">Digest · {currentEdition.date}</p>
+        <p className="mt-3 text-[11px] text-white/45">
+          <a href="https://oceanfarmr.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-white/80">An Oceanfarmr USA Publication</a>
+        </p>
+      </div>
+      <nav className="mt-9 space-y-2">
+        {categories.map((category) => (
+          <button key={category} onClick={() => setActiveFilter(category)} className={`w-full rounded-xl border px-3 py-2.5 text-left text-sm transition ${activeFilter === category ? "border-primary/60 bg-primary/12 text-primary" : "border-white/8 bg-white/[0.035] text-muted-foreground hover:border-white/20 hover:text-white"}`}>
+            <span className="flex items-center justify-between">
+              {category}
+              <span className="text-[11px]">{category === "All" ? newsItems.length + jobs.length + calendarEvents.length : category === "Jobs" ? jobs.length : category === "Calendar" ? calendarEvents.length : newsItems.filter((item) => item.category === category).length}</span>
+            </span>
+          </button>
+        ))}
+      </nav>
+      <div className="mt-9 rounded-2xl border border-amber-300/20 bg-amber-300/10 p-4">
+        <p className="label-caps text-amber-100/80">Next deadline</p>
+        <h2 className="mt-2 text-lg font-semibold text-amber-50">FoodieLand San Francisco</h2>
+        <p className="mt-2 text-sm text-amber-50/70">May 22–24, 2026 · Cow Palace, SF</p>
+      </div>
+      <div className="mt-5 flex gap-3 text-sm">
+        <Link href="/archive" className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/10 px-3 py-2 text-muted-foreground transition hover:text-white"><Archive className="h-4 w-4" /> Archive</Link>
+        <Link href="/trends" className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/10 px-3 py-2 text-muted-foreground transition hover:text-white"><Waves className="h-4 w-4" /> Trends</Link>
+      </div>
+    </aside>
+  );
 }
 
-// ─── Sub-components ──────────────────────────────────────────────────────────
-
-function NewsCard({ item, searchQuery, delay }: { item: NewsItem; searchQuery: string; delay: number }) {
-  const [copied, setCopied] = useState(false);
-  const [shareOpen, setShareOpen] = useState(false);
-
-  const handleCopy = useCallback(() => {
-    navigator.clipboard.writeText(item.sourceUrl);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  }, [item.sourceUrl]);
-
+function Hero() {
   return (
-    <article
-      className="card-animate bg-card border border-border rounded-lg p-5 flex flex-col gap-3 hover:border-teal-700/50 transition-colors duration-200 relative group"
-      style={{ animationDelay: `${delay}ms` }}
-    >
-      {/* Header row */}
-      <div className="flex items-start justify-between gap-3">
-        <div className="flex flex-wrap gap-1.5 items-center">
-          <span className={`text-[11px] font-medium px-2 py-0.5 rounded-full ${categoryBadgeClass(item.category)}`}>
-            {item.category}
-          </span>
-          {item.urgent && (
-            <span className="badge-urgent text-[11px] font-medium px-2 py-0.5 rounded-full flex items-center gap-1">
-              <AlertTriangle className="w-3 h-3" />
-              Urgent
-            </span>
-          )}
+    <section className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-black/30 shadow-2xl shadow-black/40">
+      <img src={currentEdition.heroImage} alt="Working oyster farm at dawn" className="absolute inset-0 h-full w-full object-cover opacity-80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/52 to-black/8" />
+      <div className="relative min-h-[430px] p-6 md:p-10 flex flex-col justify-between">
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="status-pill border-primary/35 bg-primary/15 text-primary"><Sparkles className="h-3.5 w-3.5" /> Weekly briefing</span>
+          <span className="status-pill border-white/15 bg-white/10 text-white/80">Edition {currentEdition.shortDate}</span>
         </div>
-        {/* Share button */}
-        <div className="relative">
-          <button
-            onClick={() => setShareOpen((o) => !o)}
-            className="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 rounded-md hover:bg-white/5 text-muted-foreground hover:text-foreground"
-            aria-label="Share"
-          >
-            <Share2 className="w-3.5 h-3.5" />
-          </button>
-          {shareOpen && (
-            <div className="absolute right-0 top-8 z-20 bg-popover border border-border rounded-lg shadow-xl p-2 flex flex-col gap-1 min-w-[160px]">
-              <button
-                onClick={handleCopy}
-                className="flex items-center gap-2 text-sm px-3 py-1.5 rounded-md hover:bg-accent text-foreground"
-              >
-                {copied ? <Check className="w-3.5 h-3.5 text-teal-400" /> : <Copy className="w-3.5 h-3.5" />}
-                {copied ? "Copied!" : "Copy source URL"}
-              </button>
-              <a
-                href={item.sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm px-3 py-1.5 rounded-md hover:bg-accent text-foreground"
-                onClick={() => setShareOpen(false)}
-              >
-                <ExternalLink className="w-3.5 h-3.5" />
-                Open source
-              </a>
-            </div>
-          )}
+        <div className="max-w-3xl">
+          <p className="label-caps text-white/60">{currentEdition.title}</p>
+          <h2 className="mt-4 max-w-4xl text-4xl font-semibold tracking-[-0.055em] text-white md:text-6xl">{currentEdition.headline}</h2>
+          <p className="shell-text mt-5 max-w-2xl text-lg leading-8 text-white/82">{currentEdition.dek}</p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <button onClick={copyEdition} className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"><Share2 className="h-4 w-4" /> Copy edition link</button>
+            <a href="#signals" className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"><Filter className="h-4 w-4" /> Review signals</a>
+          </div>
         </div>
       </div>
+    </section>
+  );
+}
 
-      {/* Headline */}
-      <h3 className="font-display font-semibold text-base leading-snug text-foreground">
-        {highlight(item.headline, searchQuery)}
-      </h3>
-
-      {/* Summary */}
-      <p className="text-sm text-muted-foreground leading-relaxed">
-        {highlight(item.summary, searchQuery)}
-      </p>
-
-      {/* Tags */}
-      {item.tags && item.tags.length > 0 && (
-        <div className="flex flex-wrap gap-1 mt-auto pt-1">
-          {item.tags.map((tag) => (
-            <span key={tag} className="text-[11px] px-1.5 py-0.5 rounded bg-white/5 text-muted-foreground">
-              {tag}
-            </span>
-          ))}
+function MetricRail() {
+  return (
+    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+      {currentEdition.metrics.map((metric) => (
+        <div key={metric.label} className="tidal-card rounded-2xl p-5">
+          <p className="label-caps">{metric.label}</p>
+          <p className={`mt-3 text-3xl font-semibold tracking-[-0.04em] ${metric.tone === "green" ? "text-primary" : metric.tone === "red" ? "text-red-200" : "text-amber-100"}`}>{metric.value}</p>
         </div>
-      )}
+      ))}
+    </div>
+  );
+}
 
-      {/* Source link */}
-      <a
-        href={item.sourceUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-1.5 text-xs text-teal-400 hover:text-teal-300 transition-colors mt-1 font-mono"
-      >
-        <ExternalLink className="w-3 h-3 flex-shrink-0" />
-        <span className="truncate">{item.source}</span>
-      </a>
+function NewsCard({ item }: { item: NewsItem }) {
+  return (
+    <article className={`tidal-card card-hover overflow-hidden rounded-3xl ${item.urgent ? "border-amber-300/30" : ""}`}>
+      {item.imageUrl && <img src={item.imageUrl} alt="" className="h-44 w-full object-cover opacity-90" />}
+      <div className="p-5">
+        <div className="flex flex-wrap items-center gap-2"><ShellBadge category={item.category} urgent={item.urgent} /><span className="text-xs text-muted-foreground">{item.region}</span></div>
+        <h3 className="mt-4 text-xl font-semibold leading-tight tracking-[-0.025em]">{item.title}</h3>
+        <p className="shell-text mt-3 text-sm leading-6 text-muted-foreground">{item.summary}</p>
+        <div className="mt-5 rounded-2xl border border-white/10 bg-black/15 p-4">
+          <p className="label-caps">Why it matters</p>
+          <p className="mt-2 text-sm leading-6 text-white/78">{item.whyItMatters}</p>
+        </div>
+        <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-primary/80">{item.sourceName}<ExternalLink className="h-4 w-4" /></a>
+      </div>
     </article>
   );
 }
 
-function CalendarCard({ event }: { event: { id: string; title: string; isoDate: string; location: string; notes: string } }) {
-  const countdown = useCountdown(event.isoDate);
-  const date = new Date(event.isoDate + "T00:00:00");
-  const formatted = date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-
+function CalendarPanel() {
   return (
-    <div className="flex gap-3 py-3 border-b border-border last:border-0">
-      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-teal-900/30 border border-teal-700/30 flex flex-col items-center justify-center">
-        <span className="text-[10px] font-mono text-teal-400 uppercase">
-          {date.toLocaleDateString("en-US", { month: "short" })}
-        </span>
-        <span className="text-lg font-display font-bold text-teal-300 leading-none">
-          {date.getDate()}
-        </span>
+    <section className="tidal-card rounded-3xl p-5">
+      <div className="flex items-center gap-3"><CalendarClock className="h-5 w-5 text-primary" /><h2 className="text-2xl font-semibold tracking-[-0.04em]">Calendar watch</h2></div>
+      <div className="mt-5 space-y-4">
+        {calendarEvents.map((event) => (
+          <a key={event.id} href={event.url} target="_blank" rel="noopener noreferrer" className="block rounded-2xl border border-white/10 bg-white/[0.035] p-4 transition hover:border-primary/40 hover:bg-white/[0.07]">
+            <div className="flex items-start justify-between gap-4"><div><p className="text-sm font-semibold text-white">{event.title}</p><p className="mt-1 text-xs text-muted-foreground">{event.dateLabel} · {event.location}</p></div><span className="rounded-full border border-primary/30 bg-primary/10 px-2.5 py-1 text-xs text-primary">{daysUntil(event.isoDate)}d</span></div>
+            <p className="mt-3 text-sm leading-6 text-muted-foreground">{event.note}</p>
+          </a>
+        ))}
       </div>
-      <div className="flex-1 min-w-0">
-        <p className="text-sm font-medium text-foreground leading-snug">{event.title}</p>
-        <p className="text-xs text-muted-foreground mt-0.5">{event.location}</p>
-        <p className="text-xs text-teal-400 mt-0.5 font-mono">{countdown} · {formatted}</p>
-      </div>
-    </div>
+    </section>
   );
 }
 
-function JobCard({ job }: { job: { id: string; role: string; employer: string; location: string; compensation: string; description: string; applyUrl: string } }) {
+function JobsPanel() {
   return (
-    <div className="flex flex-col gap-2 py-3 border-b border-border last:border-0">
-      <div className="flex items-start justify-between gap-2">
-        <div>
-          <p className="text-sm font-semibold text-foreground">{job.role}</p>
-          <p className="text-xs text-muted-foreground">{job.employer} · {job.location}</p>
-        </div>
-        <span className="text-xs font-mono text-amber-400 whitespace-nowrap">{job.compensation}</span>
+    <section className="tidal-card rounded-3xl p-5">
+      <div className="flex items-center gap-3"><BriefcaseBusiness className="h-5 w-5 text-primary" /><h2 className="text-2xl font-semibold tracking-[-0.04em]">Jobs board</h2></div>
+      <div className="mt-5 space-y-4">
+        {jobs.map((job) => (
+          <a key={job.id} href={job.applyUrl} target="_blank" rel="noopener noreferrer" className="block rounded-2xl border border-white/10 bg-white/[0.035] p-4 transition hover:border-primary/40 hover:bg-white/[0.07]">
+            <p className="text-sm font-semibold text-white">{job.role}</p>
+            <p className="mt-1 text-xs text-muted-foreground">{job.employer} · {job.location}</p>
+            <p className="mt-3 text-sm leading-6 text-muted-foreground">{job.summary}</p>
+            <div className="mt-3 flex flex-wrap gap-2 text-xs"><span className="rounded-full bg-white/10 px-2.5 py-1">{job.compensation}</span><span className="rounded-full bg-white/10 px-2.5 py-1">{job.deadline}</span>{job.applyPhone && <span className="rounded-full bg-white/10 px-2.5 py-1">{job.applyPhone}</span>}</div>
+          </a>
+        ))}
       </div>
-      <p className="text-xs text-muted-foreground leading-relaxed">{job.description}</p>
-      <a
-        href={job.applyUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 text-xs text-teal-400 hover:text-teal-300 transition-colors"
-      >
-        Apply <ChevronRight className="w-3 h-3" />
-      </a>
-    </div>
+    </section>
   );
 }
-
-// ─── Main page ───────────────────────────────────────────────────────────────
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState<"All" | Category>("All");
 
-  const filteredNews = useMemo(() => {
-    let items = currentEdition.news;
-    if (activeFilter !== "all") {
-      items = items.filter((item) => item.category === activeFilter);
-    }
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      items = items.filter(
-        (item) =>
-          item.headline.toLowerCase().includes(q) ||
-          item.summary.toLowerCase().includes(q) ||
-          item.body.toLowerCase().includes(q) ||
-          (item.tags ?? []).some((t) => t.toLowerCase().includes(q))
-      );
-    }
-    return items;
-  }, [searchQuery, activeFilter]);
-
-  const urgentCount = currentEdition.news.filter((n) => n.urgent).length;
+  const filteredItems = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    return newsItems.filter((item) => {
+      const filterMatch = activeFilter === "All" || item.category === activeFilter;
+      const queryMatch = !q || [item.title, item.summary, item.whyItMatters, item.region, item.category].join(" ").toLowerCase().includes(q);
+      return filterMatch && queryMatch;
+    });
+  }, [activeFilter, searchQuery]);
 
   return (
-    <div className="min-h-screen bg-background flex">
-      {/* ── Sidebar ── */}
-      <aside className="hidden lg:flex flex-col w-64 flex-shrink-0 border-r border-border bg-sidebar sticky top-0 h-screen overflow-y-auto">
-        <div className="p-5 border-b border-border">
-          {/* Oceanfarmr logo */}
-          <a href="https://oceanfarmr.com" target="_blank" rel="noopener noreferrer" className="block mb-3">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/101845481/YdoSnj7mHMWmcidNEoA8jc/RGBLogo_Oceanfarmr_Inline_WhiteandGreen_a90a5b7e.webp"
-              alt="Oceanfarmr"
-              className="h-5 opacity-90 hover:opacity-100 transition-opacity"
-            />
-          </a>
-          <h1 className="font-display font-bold text-sm text-foreground leading-tight">
-            US Oyster
-          </h1>
-          <p className="text-xs text-teal-400 font-medium mt-0.5">AI Edition</p>
-          <p className="text-xs text-muted-foreground mt-1">{currentEdition.date}</p>
-          <p className="text-[11px] text-muted-foreground/50 mt-2">
-            <a href="https://oceanfarmr.com" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors">
-              An Oceanfarmr USA Publication
-            </a>
-          </p>
-        </div>
-
-        {/* Edition summary */}
-        <div className="p-5 border-b border-border">
-          <p className="text-[11px] text-muted-foreground uppercase tracking-widest mb-2 font-medium">This Edition</p>
-          <p className="text-xs text-muted-foreground leading-relaxed">{currentEdition.editionWindow}</p>
-          <div className="mt-3 flex flex-col gap-1.5">
-            <div className="flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">Stories</span>
-              <span className="font-mono text-foreground">{currentEdition.news.length}</span>
+    <div className="min-h-screen lg:flex">
+      <Sidebar activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
+      <main className="flex-1 p-4 md:p-7 lg:p-8">
+        <Hero />
+        <div className="mt-5"><MetricRail /></div>
+        <section className="mt-7 grid gap-6 xl:grid-cols-[minmax(0,1fr)_390px]" id="signals">
+          <div className="space-y-6">
+            <div className="tidal-card rounded-3xl p-5 md:p-6">
+              <p className="label-caps">Executive briefing</p>
+              <div className="mt-4 grid gap-5 md:grid-cols-2">
+                {currentEdition.briefing.map((paragraph) => <p key={paragraph} className="shell-text text-base leading-8 text-white/82">{paragraph}</p>)}
+              </div>
+              <blockquote className="mt-6 border-l-2 border-primary/70 pl-5 font-serif text-xl leading-8 text-white/90">“{currentEdition.quote.text}”<footer className="mt-2 font-sans text-sm text-muted-foreground">{currentEdition.quote.speaker} · {currentEdition.quote.context}</footer></blockquote>
             </div>
-            <div className="flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">Urgent</span>
-              <span className={`font-mono ${urgentCount > 0 ? "text-amber-400" : "text-foreground"}`}>{urgentCount}</span>
+            <div className="flex flex-col gap-3 rounded-3xl border border-white/10 bg-black/20 p-3 md:flex-row md:items-center">
+              <div className="flex flex-1 items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.045] px-4 py-3"><Search className="h-4 w-4 text-muted-foreground" /><input value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} placeholder="Search story, region, source, or risk signal" className="w-full bg-transparent text-sm text-white placeholder:text-muted-foreground focus:outline-none" /></div>
+              <button onClick={() => { setSearchQuery(""); setActiveFilter("All"); }} className="rounded-2xl border border-white/10 px-4 py-3 text-sm text-muted-foreground transition hover:text-white">Reset</button>
             </div>
-            <div className="flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">Events</span>
-              <span className="font-mono text-foreground">{currentEdition.calendarEvents.length}</span>
-            </div>
-            <div className="flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">Jobs</span>
-              <span className="font-mono text-foreground">{currentEdition.jobs.length}</span>
+            <div className="grid gap-5 md:grid-cols-2">
+              {filteredItems.map((item) => <NewsCard key={item.id} item={item} />)}
             </div>
           </div>
-        </div>
-
-        {/* Nav */}
-        <nav className="p-4 flex flex-col gap-1">
-          <a href="#tldr" className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground px-2 py-1.5 rounded-md hover:bg-accent transition-colors">
-            <BookOpen className="w-3.5 h-3.5" /> TL;DR
-          </a>
-          <a href="#spotlight" className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground px-2 py-1.5 rounded-md hover:bg-accent transition-colors">
-            <Users className="w-3.5 h-3.5" /> Who's in the News
-          </a>
-          <a href="#news" className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground px-2 py-1.5 rounded-md hover:bg-accent transition-colors">
-            <Layers className="w-3.5 h-3.5" /> All Stories
-          </a>
-          <a href="#calendar" className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground px-2 py-1.5 rounded-md hover:bg-accent transition-colors">
-            <Calendar className="w-3.5 h-3.5" /> Calendar
-          </a>
-          <a href="#jobs" className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground px-2 py-1.5 rounded-md hover:bg-accent transition-colors">
-            <Briefcase className="w-3.5 h-3.5" /> Jobs
-          </a>
-          <Link href="/archive" className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground px-2 py-1.5 rounded-md hover:bg-accent transition-colors mt-2 border-t border-border pt-3">
-            <Archive className="w-3.5 h-3.5" /> Archive
-          </Link>
-        </nav>
-      </aside>
-
-      {/* ── Main content ── */}
-      <main className="flex-1 min-w-0 overflow-y-auto">
-        {/* Hero banner */}
-        <header className="relative bg-gradient-to-br from-navy-900 to-background border-b border-border overflow-hidden">
-          <div
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage: `url("https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1400&q=80")`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          />
-          <div className="relative px-6 py-8 lg:py-10">
-            {/* Mobile logo */}
-            <div className="flex items-center gap-3 mb-4 lg:hidden">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/101845481/YdoSnj7mHMWmcidNEoA8jc/RGBLogo_Oceanfarmr_Inline_WhiteandGreen_a90a5b7e.webp"
-                alt="Oceanfarmr"
-                className="h-5 opacity-90"
-              />
-            </div>
-            <div className="flex flex-wrap items-start justify-between gap-4">
-              <div className="max-w-2xl">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-mono text-teal-400 uppercase tracking-widest">US Oyster · AI Edition</span>
-                  {urgentCount > 0 && (
-                    <span className="badge-urgent text-[11px] px-2 py-0.5 rounded-full flex items-center gap-1">
-                      <AlertTriangle className="w-3 h-3" />
-                      {urgentCount} urgent
-                    </span>
-                  )}
-                </div>
-                <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground leading-tight">
-                  {currentEdition.headline}
-                </h2>
-                <p className="text-sm text-muted-foreground mt-1">{currentEdition.date} · {currentEdition.editionWindow}</p>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        <div className="px-4 md:px-6 py-6 max-w-4xl mx-auto space-y-10">
-
-          {/* TL;DR */}
-          <section id="tldr">
-            <div className="shell-divider mb-4">TL;DR</div>
-            <div className="bg-card border border-border rounded-lg p-5">
-              <p className="text-sm text-muted-foreground leading-relaxed">{currentEdition.tldr}</p>
-            </div>
-          </section>
-
-          {/* Spotlight */}
-          <section id="spotlight">
-            <div className="shell-divider mb-4">Who's in the News</div>
-            <div className="bg-card border border-teal-700/30 rounded-lg p-5 flex flex-col md:flex-row gap-5">
-              <div className="flex-shrink-0 md:w-2/5">
-                <p className="text-[11px] text-teal-400 font-mono uppercase tracking-widest mb-1">Spotlight</p>
-                <h3 className="font-display font-bold text-lg text-foreground">{currentEdition.spotlight.name}</h3>
-                <p className="text-sm text-muted-foreground">{currentEdition.spotlight.title}, {currentEdition.spotlight.company}</p>
-                <p className="text-xs text-muted-foreground mt-0.5">{currentEdition.spotlight.location}</p>
-              </div>
-              <div className="flex-1 space-y-3">
-                <p className="text-sm text-muted-foreground leading-relaxed">{currentEdition.spotlight.body}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">{currentEdition.spotlight.body2}</p>
-              </div>
-            </div>
-          </section>
-
-          {/* News section */}
-          <section id="news">
-            <div className="shell-divider mb-4">Stories</div>
-
-            {/* Search + filter */}
-            <div className="flex flex-col sm:flex-row gap-3 mb-5">
-              <div className="relative flex-1">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                <input
-                  type="text"
-                  placeholder="Search stories…"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-9 pr-4 py-2 text-sm bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
-                />
-              </div>
-            </div>
-
-            {/* Filter bar */}
-            <div className="flex flex-wrap gap-1.5 mb-5">
-              {CATEGORIES.map(({ key, label, icon: Icon }) => (
-                <button
-                  key={key}
-                  onClick={() => setActiveFilter(key)}
-                  className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-colors duration-150 ${
-                    activeFilter === key
-                      ? "bg-primary text-primary-foreground border-primary"
-                      : "bg-transparent text-muted-foreground border-border hover:border-teal-700/50 hover:text-foreground"
-                  }`}
-                >
-                  <Icon className="w-3 h-3" />
-                  {label}
-                </button>
-              ))}
-            </div>
-
-            {/* Cards grid */}
-            {filteredNews.length === 0 ? (
-              <div className="text-center py-12 text-muted-foreground text-sm">
-                No stories match your search or filter.
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {filteredNews.map((item, i) => (
-                  <NewsCard key={item.id} item={item} searchQuery={searchQuery} delay={i * 40} />
-                ))}
-              </div>
-            )}
-          </section>
-
-          {/* Quote of the week */}
-          <section>
-            <div className="shell-divider mb-4">Quote of the Week</div>
-            <blockquote className="bg-card border-l-4 border-teal-500 rounded-r-lg p-5">
-              <p className="text-base text-foreground leading-relaxed italic">
-                "{currentEdition.quote.text}"
-              </p>
-              <footer className="mt-3">
-                <p className="text-sm font-semibold text-teal-400">{currentEdition.quote.attribution}</p>
-                <p className="text-xs text-muted-foreground mt-0.5">{currentEdition.quote.context}</p>
-              </footer>
-            </blockquote>
-          </section>
-
-          {/* Calendar */}
-          <section id="calendar">
-            <div className="shell-divider mb-4">Industry Calendar</div>
-            <div className="bg-card border border-border rounded-lg px-5 divide-y divide-border">
-              {currentEdition.calendarEvents.map((event) => (
-                <CalendarCard key={event.id} event={event} />
-              ))}
-            </div>
-          </section>
-
-          {/* Jobs */}
-          <section id="jobs">
-            <div className="shell-divider mb-4">Employment Board</div>
-            <div className="bg-card border border-border rounded-lg px-5 divide-y divide-border">
-              {currentEdition.jobs.map((job) => (
-                <JobCard key={job.id} job={job} />
-              ))}
-            </div>
-          </section>
-
-          {/* References */}
-          <section>
-            <div className="shell-divider mb-4">References</div>
-            <div className="bg-card border border-border rounded-lg p-5">
-              <ol className="space-y-2">
-                {currentEdition.references.map((ref) => (
-                  <li key={ref.id} className="flex gap-2 text-xs">
-                    <span className="font-mono text-muted-foreground flex-shrink-0">[{ref.id}]</span>
-                    <a
-                      href={ref.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-teal-400 hover:text-teal-300 transition-colors break-all"
-                    >
-                      {ref.label}
-                    </a>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </section>
-
-          {/* Footer */}
-          <footer className="border-t border-border pt-6 pb-10 text-center">
-            <p className="text-xs text-muted-foreground">
-              US Oyster — AI Edition · {currentEdition.date}
-            </p>
-            <p className="text-[11px] text-muted-foreground/50 mt-2">
-              <a href="https://oceanfarmr.com" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors">
-                An Oceanfarmr USA Publication
-              </a>
-            </p>
-          </footer>
-        </div>
+          <aside className="space-y-6">
+            <CalendarPanel />
+            <JobsPanel />
+            <section className="tidal-card rounded-3xl p-5">
+              <div className="flex items-center gap-3"><Clipboard className="h-5 w-5 text-primary" /><h2 className="text-2xl font-semibold tracking-[-0.04em]">Farm management signal</h2></div>
+              <p className="shell-text mt-4 leading-7 text-muted-foreground">This week’s management theme is mortality readiness. North Carolina growers are entering the mid-May to mid-June high-watch window. Farms should check salinity trends, review mortality logs by gear type and site, confirm cold-chain procedures for warmer weather, and prepare clear Vibrio-season messaging for buyers and consumers.</p>
+            </section>
+          </aside>
+        </section>
+        <footer className="py-10 text-center text-[11px] text-muted-foreground/50"><a href="https://oceanfarmr.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-muted-foreground">An Oceanfarmr USA Publication</a></footer>
       </main>
     </div>
   );

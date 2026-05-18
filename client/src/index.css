@@ -1,16 +1,15 @@
-/* ============================================================
-   US Oyster News Hub — Tidal Dashboard Design System
-   Design Movement: Coastal Editorial
-   Palette: Deep Navy + Sea-Glass Teal + Oyster Off-White + Amber
-   Typography: Space Grotesk (display) + Inter (body) + JetBrains Mono (code)
-   ============================================================ */
-
+/*
+Tidal Dashboard philosophy for global styling: dark estuary surfaces, shell-white text, tide-line separators, compact status colour, and restrained instrument-panel motion.
+Does this choice reinforce or dilute our design philosophy?
+*/
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4", ui-serif, Georgia, serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -47,137 +46,77 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-
-  /* Custom tidal palette */
-  --color-teal: oklch(0.72 0.14 185);
-  --color-teal-dim: oklch(0.55 0.10 185);
-  --color-amber: oklch(0.78 0.16 65);
-  --color-navy: oklch(0.18 0.04 245);
-  --color-navy-mid: oklch(0.22 0.04 245);
-  --color-navy-surface: oklch(0.26 0.035 245);
-  --color-oyster: oklch(0.91 0.01 80);
 }
 
 :root {
-  --radius: 0.5rem;
-  --background: oklch(0.18 0.04 245);
-  --foreground: oklch(0.91 0.01 80);
-  --card: oklch(0.22 0.04 245);
-  --card-foreground: oklch(0.91 0.01 80);
-  --popover: oklch(0.22 0.04 245);
-  --popover-foreground: oklch(0.91 0.01 80);
-  --primary: oklch(0.72 0.14 185);
-  --primary-foreground: oklch(0.18 0.04 245);
-  --secondary: oklch(0.26 0.035 245);
-  --secondary-foreground: oklch(0.75 0.01 80);
-  --muted: oklch(0.24 0.04 245);
-  --muted-foreground: oklch(0.62 0.015 245);
-  --accent: oklch(0.26 0.035 245);
-  --accent-foreground: oklch(0.91 0.01 80);
-  --destructive: oklch(0.78 0.16 65);
-  --destructive-foreground: oklch(0.18 0.04 245);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.72 0.14 185);
-  --chart-1: oklch(0.72 0.14 185);
-  --chart-2: oklch(0.78 0.16 65);
-  --chart-3: oklch(0.55 0.10 185);
-  --chart-4: oklch(0.65 0.12 245);
-  --chart-5: oklch(0.80 0.08 120);
-  --sidebar: oklch(0.15 0.04 245);
-  --sidebar-foreground: oklch(0.91 0.01 80);
-  --sidebar-primary: oklch(0.72 0.14 185);
-  --sidebar-primary-foreground: oklch(0.18 0.04 245);
-  --sidebar-accent: oklch(0.22 0.04 245);
-  --sidebar-accent-foreground: oklch(0.91 0.01 80);
-  --sidebar-border: oklch(1 0 0 / 8%);
-  --sidebar-ring: oklch(0.72 0.14 185);
+  --radius: 0.85rem;
+  --background: oklch(0.18 0.026 202);
+  --foreground: oklch(0.94 0.018 95);
+  --card: oklch(0.235 0.028 205);
+  --card-foreground: oklch(0.94 0.018 95);
+  --popover: oklch(0.205 0.026 205);
+  --popover-foreground: oklch(0.94 0.018 95);
+  --primary: oklch(0.74 0.115 165);
+  --primary-foreground: oklch(0.15 0.025 205);
+  --secondary: oklch(0.31 0.032 202);
+  --secondary-foreground: oklch(0.9 0.016 95);
+  --muted: oklch(0.27 0.022 205);
+  --muted-foreground: oklch(0.72 0.024 104);
+  --accent: oklch(0.68 0.13 78);
+  --accent-foreground: oklch(0.16 0.025 205);
+  --destructive: oklch(0.64 0.19 28);
+  --destructive-foreground: oklch(0.97 0.01 95);
+  --border: oklch(0.42 0.026 205 / 55%);
+  --input: oklch(0.28 0.026 205);
+  --ring: oklch(0.72 0.115 165);
+  --chart-1: oklch(0.74 0.115 165);
+  --chart-2: oklch(0.68 0.13 78);
+  --chart-3: oklch(0.64 0.11 225);
+  --chart-4: oklch(0.78 0.06 105);
+  --chart-5: oklch(0.58 0.12 35);
+  --sidebar: oklch(0.145 0.022 205);
+  --sidebar-foreground: oklch(0.94 0.018 95);
+  --sidebar-primary: oklch(0.74 0.115 165);
+  --sidebar-primary-foreground: oklch(0.14 0.022 205);
+  --sidebar-accent: oklch(0.24 0.026 205);
+  --sidebar-accent-foreground: oklch(0.94 0.018 95);
+  --sidebar-border: oklch(0.37 0.026 205 / 55%);
+  --sidebar-ring: oklch(0.72 0.115 165);
 }
 
+.dark { color-scheme: dark; }
+
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
+  * { @apply border-border outline-ring/50; }
+  html { scroll-behavior: smooth; }
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply bg-background text-foreground font-sans antialiased;
+    background:
+      radial-gradient(circle at 18% 12%, oklch(0.34 0.05 178 / 0.38), transparent 32rem),
+      radial-gradient(circle at 82% 3%, oklch(0.46 0.08 78 / 0.16), transparent 25rem),
+      linear-gradient(135deg, oklch(0.13 0.022 205), oklch(0.18 0.026 202) 45%, oklch(0.12 0.018 205));
+    min-height: 100vh;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', system-ui, sans-serif;
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.12;
+    background-image:
+      linear-gradient(oklch(1 0 0 / .05) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(1 0 0 / .05) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
   }
-  code, pre, .font-mono {
-    font-family: 'JetBrains Mono', monospace;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  a[href],
-  select:not(:disabled) {
-    @apply cursor-pointer;
-  }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), a[href], select:not(:disabled), input:not(:disabled) { @apply cursor-pointer; }
 }
 
 @layer components {
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      max-width: 1280px;
-    }
-  }
-
-  /* Category badge classes */
-  .badge-industry     { @apply bg-teal-900/40 text-teal-300 border border-teal-700/40; }
-  .badge-science      { @apply bg-blue-900/40 text-blue-300 border border-blue-700/40; }
-  .badge-regulations  { @apply bg-amber-900/40 text-amber-300 border border-amber-700/40; }
-  .badge-farm         { @apply bg-green-900/40 text-green-300 border border-green-700/40; }
-  .badge-community    { @apply bg-purple-900/40 text-purple-300 border border-purple-700/40; }
-  .badge-ecosystem    { @apply bg-emerald-900/40 text-emerald-300 border border-emerald-700/40; }
-  .badge-employment   { @apply bg-slate-700/40 text-slate-300 border border-slate-600/40; }
-  .badge-urgent       { @apply bg-amber-500/20 text-amber-300 border border-amber-500/50; }
-
-  /* Card entrance animation */
-  @keyframes card-in {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .card-animate {
-    animation: card-in 200ms cubic-bezier(0.23, 1, 0.32, 1) both;
-  }
-
-  /* Oyster shell divider */
-  .shell-divider {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    color: oklch(0.62 0.015 245);
-    font-size: 0.75rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  .shell-divider::before,
-  .shell-divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: oklch(1 0 0 / 8%);
-  }
+  .tidal-card { @apply border border-white/10 bg-white/[0.055] shadow-2xl shadow-black/20 backdrop-blur-xl; }
+  .tidal-line { @apply border-t border-white/10; }
+  .label-caps { @apply text-[11px] uppercase tracking-[0.22em] text-muted-foreground; }
+  .shell-text { @apply font-serif text-foreground/90; }
+  .status-pill { @apply inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em]; }
+  .card-hover { @apply transition duration-200 ease-out hover:-translate-y-1 hover:border-primary/45 hover:bg-white/[0.08]; }
 }
