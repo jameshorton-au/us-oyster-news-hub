@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/101845481/TxyjSCUHX9X4XpWp9iBPWN",
+    "access_key_id": "ASIAZV3A2ECZJCMASF4X",
+    "secret_access_key": "Kwim5OiVCk1xJsSHpYDX2JgROj8+I0bkaJGYjZ0/",
+    "session_token": "IQoJb3JpZ2luX2VjEPH//////////wEaCXVzLWVhc3QtMSJHMEUCIG9giNXtQMzLB0ptPDTbOONKHBW3+f4zBUSe7Vgdybg/AiEA/Qy27w73d/jsNgIkxnPBG/x4T0sZ19p8nA8Z3egjpsYq7QMIuf//////////ARAEGgw2NjUzODYwOTg4NjYiDGLFO3vBTjj7UEGwpyrBA3UocsW9jF7pc1JN9Ue7O30/ve1m7QOvgoyjlvenqPipRsUZ2Im3RvJOcQqftrot7r4JYG43zyRSf397yDq2ZwBsiEr1oN6og4z8+3ttOmiBVv+iyqN6/vPpxVFGfHa0c1NVUQNL+Hp1Ptm4WqygkPVZzYTXwIlzG74ctmeJCQ27ZOFhVpyN2+M02LlLvQyNzAizCtRe7eOZXKQCg1sIz7tN/6uCss82+96Rf5ItwbLoPmfMe5HOHxWN0ui/C8nrzlMt7qmR5GyySEIqOqic77pp7sRZbJHZ+Z7UOLiQON01iHICUsXRN4kO4CSqGdRueGwJ1r+cz2tdeEwV1aRhRZ9w6Stz5XOEVdCHdXtVKTDaYPjn6CeQ3T1iNMVNoqN1z6GyIlGUfjquHyd3pvnUMclRDpPEx3yCNc37s2CVLwLwY1Bi1sMLYGA0hiediO2oNo1ewe9OF2SYGkDj73W2GiKypvrAYuY4h5ftCs+vz/BI5opLyzXvLPgn5XhaFoube+uqWS3H0DubAGzYqH5319HquMMv26omAApVyT/KjWLT5IT5vJ0qZUk1Gn/DBdq6jF6B0v7zLp5CHBE5rFQcgVmDMPySq9AGOp0Bh9WLaIxYKqjbZTvwenvcRo3e78Gil16rhKoE4zpjJXIhXJ7VaUhN7b91Gnbe3Dt3UsTJIkcVfJKHiznAM7lUmZS3eem1s5iBpBnAO1MpjzhWGauaO6SBgQX/PtBpMIISmeDa/0ujv3ypwsYdF+FXOAL/vk/1AN8pGm3anPjIUBInRYzAlJlpPKioz1KrrAZ4oQsALw3PXAiG3c9ZXA==",
+    "expiration": "2026-05-18T20:10:36.000Z"
+  },
+  "name": "us-oyster-news-hub",
+  "path": "/home/ubuntu/us-oyster-news-hub",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "oGPxonX942KkVY3DdazqSe",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "PtRPxdCQVgJzDWf3BJjftG",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "James Horton",
+    "OWNER_OPEN_ID": "PF7CyeHrGcySRWZoR2dt6x",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "e6515605-3f72-45e1-be05-825f4a452112",
+    "VITE_APP_ID": "TxyjSCUHX9X4XpWp9iBPWN",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "US Oyster News Hub",
+    "VITE_FRONTEND_FORGE_API_KEY": "6RU7mrYs4r9oVukEyQFsuA",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
