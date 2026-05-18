@@ -1,5 +1,6 @@
 /*
-Tidal Dashboard philosophy for global styling: dark estuary surfaces, shell-white text, tide-line separators, compact status colour, and restrained instrument-panel motion.
+Tidal Dashboard philosophy — lightened edition: mid-slate surfaces, shell-white text, tide-line separators, compact status colour, restrained instrument-panel motion.
+Background lifted from deep navy (L≈0.18) to mid-slate (L≈0.30) so cards read clearly without losing the coastal character.
 Does this choice reinforce or dilute our design philosophy?
 */
 @import "tailwindcss";
@@ -50,37 +51,41 @@ Does this choice reinforce or dilute our design philosophy?
 
 :root {
   --radius: 0.85rem;
-  --background: oklch(0.18 0.026 202);
-  --foreground: oklch(0.94 0.018 95);
-  --card: oklch(0.235 0.028 205);
-  --card-foreground: oklch(0.94 0.018 95);
-  --popover: oklch(0.205 0.026 205);
-  --popover-foreground: oklch(0.94 0.018 95);
+  /* Page background: mid-slate with a coastal teal cast */
+  --background: oklch(0.30 0.022 205);
+  --foreground: oklch(0.96 0.012 95);
+  /* Cards: noticeably lighter than the page so they stand out */
+  --card: oklch(0.38 0.020 205);
+  --card-foreground: oklch(0.96 0.012 95);
+  --popover: oklch(0.35 0.020 205);
+  --popover-foreground: oklch(0.96 0.012 95);
+  /* Primary: sea-glass teal — unchanged */
   --primary: oklch(0.74 0.115 165);
   --primary-foreground: oklch(0.15 0.025 205);
-  --secondary: oklch(0.31 0.032 202);
-  --secondary-foreground: oklch(0.9 0.016 95);
-  --muted: oklch(0.27 0.022 205);
-  --muted-foreground: oklch(0.72 0.024 104);
+  --secondary: oklch(0.44 0.026 202);
+  --secondary-foreground: oklch(0.94 0.012 95);
+  --muted: oklch(0.40 0.018 205);
+  --muted-foreground: oklch(0.76 0.020 104);
   --accent: oklch(0.68 0.13 78);
   --accent-foreground: oklch(0.16 0.025 205);
   --destructive: oklch(0.64 0.19 28);
   --destructive-foreground: oklch(0.97 0.01 95);
-  --border: oklch(0.42 0.026 205 / 55%);
-  --input: oklch(0.28 0.026 205);
+  --border: oklch(0.55 0.020 205 / 50%);
+  --input: oklch(0.42 0.020 205);
   --ring: oklch(0.72 0.115 165);
   --chart-1: oklch(0.74 0.115 165);
   --chart-2: oklch(0.68 0.13 78);
   --chart-3: oklch(0.64 0.11 225);
   --chart-4: oklch(0.78 0.06 105);
   --chart-5: oklch(0.58 0.12 35);
-  --sidebar: oklch(0.145 0.022 205);
-  --sidebar-foreground: oklch(0.94 0.018 95);
+  /* Sidebar: slightly darker than cards so it reads as a distinct rail */
+  --sidebar: oklch(0.26 0.022 205);
+  --sidebar-foreground: oklch(0.96 0.012 95);
   --sidebar-primary: oklch(0.74 0.115 165);
   --sidebar-primary-foreground: oklch(0.14 0.022 205);
-  --sidebar-accent: oklch(0.24 0.026 205);
-  --sidebar-accent-foreground: oklch(0.94 0.018 95);
-  --sidebar-border: oklch(0.37 0.026 205 / 55%);
+  --sidebar-accent: oklch(0.36 0.022 205);
+  --sidebar-accent-foreground: oklch(0.96 0.012 95);
+  --sidebar-border: oklch(0.50 0.020 205 / 50%);
   --sidebar-ring: oklch(0.72 0.115 165);
 }
 
@@ -92,9 +97,9 @@ Does this choice reinforce or dilute our design philosophy?
   body {
     @apply bg-background text-foreground font-sans antialiased;
     background:
-      radial-gradient(circle at 18% 12%, oklch(0.34 0.05 178 / 0.38), transparent 32rem),
-      radial-gradient(circle at 82% 3%, oklch(0.46 0.08 78 / 0.16), transparent 25rem),
-      linear-gradient(135deg, oklch(0.13 0.022 205), oklch(0.18 0.026 202) 45%, oklch(0.12 0.018 205));
+      radial-gradient(circle at 18% 12%, oklch(0.46 0.06 178 / 0.30), transparent 32rem),
+      radial-gradient(circle at 82% 3%, oklch(0.56 0.08 78 / 0.12), transparent 25rem),
+      linear-gradient(135deg, oklch(0.24 0.022 205), oklch(0.30 0.022 202) 45%, oklch(0.22 0.018 205));
     min-height: 100vh;
   }
   body::before {
@@ -102,10 +107,10 @@ Does this choice reinforce or dilute our design philosophy?
     position: fixed;
     inset: 0;
     pointer-events: none;
-    opacity: 0.12;
+    opacity: 0.08;
     background-image:
-      linear-gradient(oklch(1 0 0 / .05) 1px, transparent 1px),
-      linear-gradient(90deg, oklch(1 0 0 / .05) 1px, transparent 1px);
+      linear-gradient(oklch(1 0 0 / .06) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(1 0 0 / .06) 1px, transparent 1px);
     background-size: 42px 42px;
     mask-image: linear-gradient(to bottom, black, transparent 85%);
   }
@@ -113,10 +118,11 @@ Does this choice reinforce or dilute our design philosophy?
 }
 
 @layer components {
-  .tidal-card { @apply border border-white/10 bg-white/[0.055] shadow-2xl shadow-black/20 backdrop-blur-xl; }
-  .tidal-line { @apply border-t border-white/10; }
+  /* Cards are now lighter — bg-card/90 gives a translucent lift over the page */
+  .tidal-card { @apply border border-white/15 bg-card/90 shadow-xl shadow-black/15 backdrop-blur-xl; }
+  .tidal-line { @apply border-t border-white/12; }
   .label-caps { @apply text-[11px] uppercase tracking-[0.22em] text-muted-foreground; }
   .shell-text { @apply font-serif text-foreground/90; }
   .status-pill { @apply inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em]; }
-  .card-hover { @apply transition duration-200 ease-out hover:-translate-y-1 hover:border-primary/45 hover:bg-white/[0.08]; }
+  .card-hover { @apply transition duration-200 ease-out hover:-translate-y-1 hover:border-primary/45 hover:bg-card; }
 }
