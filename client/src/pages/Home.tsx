@@ -62,8 +62,8 @@ function Sidebar({ activeFilter, setActiveFilter }: { activeFilter: "All" | Cate
       </nav>
       <div className="mt-9 rounded-2xl border border-amber-300/25 bg-amber-300/12 p-4">
         <p className="label-caps text-amber-100/80">Next deadline</p>
-        <h2 className="mt-2 text-lg font-semibold text-amber-50">FoodieLand San Francisco</h2>
-        <p className="mt-2 text-sm text-amber-50/70">May 22–24, 2026 · Cow Palace, SF</p>
+        <h2 className="mt-2 text-lg font-semibold text-amber-50">Maine Oyster Festival</h2>
+        <p className="mt-2 text-sm text-amber-50/70">June 27–28, 2026 · Freeport, ME</p>
       </div>
       <div className="mt-5 flex gap-3 text-sm">
         <Link href="/archive" className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/12 bg-white/[0.04] px-3 py-2 text-muted-foreground transition hover:border-white/25 hover:text-white"><Archive className="h-4 w-4" /> Archive</Link>
@@ -256,7 +256,7 @@ export default function Home() {
               <h2 className="text-xl font-semibold tracking-[-0.04em]">Farm management signal</h2>
             </div>
             <p className="shell-text mt-4 leading-7 text-muted-foreground">
-              This week's management theme is mortality readiness. North Carolina growers are entering the mid-May to mid-June high-watch window. Farms should check salinity trends, review mortality logs by gear type and site, confirm cold-chain procedures for warmer weather, and prepare clear Vibrio-season messaging for buyers and consumers.
+              This week's management theme is summer resilience and market positioning. NOAA's CIFARM launch signals long-term federal support — growers should track research calls for proposals. Cornell's finding that farmed oysters replenish wild populations is a strong permitting argument: document your farm's proximity to wild reefs. On the disease front, the new USDA genomic selection research on Dermo resistance is worth sharing with your seed supplier. Review your Vibrio-season protocols and cold-chain documentation before peak summer harvest.
             </p>
           </div>
         )}

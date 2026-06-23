@@ -17,6 +17,50 @@ export type ArchivedEdition = {
 
 export const archivedEditions: ArchivedEdition[] = [
   {
+    id: "2026-05-24",
+    date: "May 24, 2026",
+    isoDate: "2026-05-24",
+    headline: "Demand risk, freeze recovery, Vibrio vigilance, and restoration economics",
+    summary: "Virginia researchers see steady summer supply but flag demand-side risk. New York awarded $3M to 14 Long Island farms after winter freeze losses. UW reports 72–98% burrowing-shrimp reduction in Willapa Bay. Vibrio risk expanding northward along the Atlantic Coast.",
+    topStories: [
+      "Virginia demand-side risk",
+      "Long Island $3M freeze-recovery support",
+      "Willapa Bay non-chemical shrimp control",
+      "Vibrio season vigilance"
+    ],
+    urgentCount: 3,
+    tags: ["Industry", "Science", "Regulation", "Ecosystem", "Jobs"],
+    regions: ["Mid-Atlantic", "Northeast", "Pacific Northwest", "Atlantic Coast", "Gulf", "Pacific"],
+    fullContent: "Edition of May 24, 2026. Virginia researchers expect steady oyster supply but VIMS economist Andrew Scheld flagged demand-side pressure from restaurant traffic and household budgets. New York announced $3M in support for 14 Long Island farms after winter freeze losses. UW researchers reported 72–98% burrowing shrimp reduction in Willapa Bay using non-chemical sediment compaction. Vibrio risk is expanding northward along the Atlantic Coast. Florida shell recycling added reef material to Turtle Bay; California's Shells for Shorelines program passed 24,000 pounds collected."
+  },
+  {
+    id: "2026-05-18",
+    date: "May 18, 2026",
+    isoDate: "2026-05-18",
+    headline: "Seed scale-up, shrimp control, and Chesapeake policy risk",
+    summary: "This week's oyster briefing covers Pacific Hybreed's $1M Kona seed expansion, a UW burrowing shrimp breakthrough, a Chesapeake appropriations fight, North Carolina mortality watch, and two farm jobs.",
+    topStories: [
+      "Pacific Hybreed seed scale-up",
+      "UW shrimp control breakthrough",
+      "Chesapeake appropriations fight",
+      "NC mortality watch window"
+    ],
+    urgentCount: 2,
+    tags: [
+      "Industry",
+      "Science",
+      "Regulation",
+      "Jobs"
+    ],
+    regions: [
+      "Pacific",
+      "Gulf",
+      "Mid-Atlantic",
+      "Southeast"
+    ],
+    fullContent: "# US Oyster — AI Edition | May 18, 2026\n\n**Edition window:** May 11–18, 2026\n**Prepared for:** Oceanfarmr USA\n\n---\n\n## TL;DR\n\nThis week's US oyster desk is led by a **Kona-based shellfish seed scale-up**, a **Washington farm-management breakthrough**, and a **Chesapeake policy fight** that could affect restored oyster reefs. Pacific Hybreed closed a **$1 million funding round** to expand commercial seed output in Hawaiʻi from **25 million to 200 million seeds per year**, with CEO Melissa DellaTorre positioning uniform seed performance as a labor-saving tool for farmers. University of Washington researchers reported a non-chemical burrowing shrimp control method that reduced live shrimp by **72% to 98%** in Willapa Bay trials. In the Chesapeake, the Chesapeake Bay Foundation warned that a House Appropriations Committee bill would remove protections and funding tied to oyster reef restoration.\n\n---\n\n## Who's in the News\n\n### Melissa DellaTorre and Pacific Hybreed turn shellfish genetics into expansion capital\n\nPacific Hybreed, an aquaculture biotechnology startup based in Kailua-Kona, closed a **$1 million funding round** backed by Hawaii Angels and Blue Startups. Under CEO **Melissa DellaTorre**, Pacific Hybreed plans to increase Kona output from **25 million seeds per year to 200 million** and broaden its breeding work beyond Pacific oysters.\n\n> \"What we're trying to do is really reduce farm labor by having uniform, consistent growth and more predictable harvesting schedules.\" — Melissa DellaTorre, CEO of Pacific Hybreed.\n\n---\n\n## Industry News\n\n### New Orleans turns oyster demand into restoration supply\n\nChefs Brigade's **OysterNight New Orleans** returned on May 14 with more than **90 participating restaurants** across greater New Orleans featuring Louisiana and Gulf Coast oysters. The event is tied to the Coalition to Restore Coastal Louisiana's Oyster Shell Recycling Program, which previously recycled **8 tons of oyster shells in a single day**.\n\n---\n\n## Science & Innovation\n\n### Washington researchers test a non-chemical tool for burrowing shrimp\n\nUniversity of Washington researchers led by Jennifer Ruesink tested a vibrocompaction platform that compacts sediment and traps shrimp in burrows. Field trials at four Willapa Bay sites reduced live shrimp by **72% to 98%**, comparable to pesticide control.\n\n### Chesapeake acidification dashboard project brings farmers into adaptation planning\n\nWilliam & Mary and VIMS are leading a **$1.2 million NOAA-funded** project to help the Chesapeake Bay shellfish industry prepare for ocean and coastal acidification, including a web-based dashboard for farm-level decision-making.\n\n---\n\n## Farm Management\n\n### North Carolina enters the high-watch window for oyster mortality\n\nUNCW Shellfish Research Hatchery director Ami Wilbur noted that mortality pressure often peaks from **mid-May through mid-June**. Drought-driven salinity is also a concern. North Carolina has **525 active shellfish leases** covering just over **2,500 acres**.\n\n---\n\n## Regulations\n\n### Chesapeake reef protections enter a federal appropriations fight\n\nThe Chesapeake Bay Foundation warned on May 14 that the House Appropriations Committee passed a NOAA funding bill **32–28** that would allow commercial fishing on protected oyster reefs and cut restoration support before moving to the House floor.\n\n---\n\n## Industry Calendar\n\n| Date | Event | Location |\n|---|---|---|\n| **May 22–24, 2026** | FoodieLand San Francisco | Cow Palace, San Francisco, CA |\n| **May 30, 2026** | Oysterfest at Chevy Chase Lake | Chevy Chase, MD |\n| **June 6, 2026** | New Bedford Oysterfest 2026 | New Bedford, MA |\n| **June 7, 2026** | \"Aw, Shucks! The Extraordinary History & Outlook for CT Oysters\" | New Haven, CT |\n\n---\n\n## Employment Board\n\n| Role | Employer | Location | Compensation |\n|---|---|---|---|\n| **Farm Crew Worker** | Hog Island Oyster | Marshall, CA | **$22–$25/hour DOE** |\n| **Restaurant Manager** | Found Oyster | Los Angeles, CA | **$80,000–$90,000** |\n\n---\n\n## Quote of the Week\n\n> \"Burrowing shrimp have decimated our farm. We've lost 75% of our nursery ground and, as a result, the farm's carrying capacity has fallen from 265,000 bushels of market-ready oysters to 75,000 bushels.\" — Ken Wiegardt, Jolly Roger Oysters.\n\n---\n\n## References\n\n1. https://www.htdc.org/pacific-hybreed-raises-1m-to-expand-kona-oyster-production/\n2. https://www.washington.edu/news/2026/05/14/a-new-method-could-help-washington-shellfish-farmers-control-a-pesky-shrimp/\n3. https://www.cbf.org/news/house-committee-passes-disastrous-bill-for-oyster-reefs-and-chesapeake-bay-restoration/\n4. https://www.chefsbrigade.org/oyster-night\n5. https://www.aquaculturenorthamerica.com/new-project-aims-to-protect-chesapeake-shellfish-industry-from-acidification/\n6. https://www.aol.com/news/weather-warms-challenges-ncs-shellfish-090133242.html\n7. https://www.newportlifemagazine.com/event/10th-annual-newport-oyster-chowder-festival/2026-05-17/\n8. https://aghires.com/career/391480/farm-crew-in-california-marshall\n9. https://culinaryagents.com/jobs/696453-Restaurant-Manager\n"
+  },
+    {
     "id": "2026-05-04",
     "date": "May 4, 2026",
     "isoDate": "2026-05-04",

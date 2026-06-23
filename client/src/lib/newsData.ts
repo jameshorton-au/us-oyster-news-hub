@@ -3,7 +3,6 @@ Tidal Dashboard data contract: each story is an operational signal with category
 Does this data choice reinforce or dilute our design philosophy?
 */
 export type Category = "Industry" | "Regulation" | "Science" | "Jobs" | "Calendar";
-
 export type NewsItem = {
   id: string;
   title: string;
@@ -16,7 +15,6 @@ export type NewsItem = {
   sourceName: string;
   sourceUrl: string;
 };
-
 export type CalendarEvent = {
   id: string;
   title: string;
@@ -26,7 +24,6 @@ export type CalendarEvent = {
   note: string;
   url: string;
 };
-
 export type JobPost = {
   id: string;
   role: string;
@@ -41,275 +38,254 @@ export type JobPost = {
 
 export const oceanfarmrLogo = "https://d2xsxph8kpxj0f.cloudfront.net/101845481/YdoSnj7mHMWmcidNEoA8jc/RGBLogo_Oceanfarmr_Inline_WhiteandGreen_a90a5b7e.webp";
 
+// Edition: June 23, 2026
 export const currentEdition = {
-  id: "2026-05-18",
-  date: "May 18, 2026",
-  shortDate: "May 18",
+  id: "2026-06-23",
+  date: "June 23, 2026",
+  shortDate: "Jun 23",
   title: "US Oyster — AI Edition",
-  headline: "Seed scale-up, shrimp control, and Chesapeake policy risk",
-  dek: "This week's oyster briefing covers Pacific Hybreed's $1M Kona seed expansion, a UW burrowing shrimp breakthrough, a Chesapeake appropriations fight, North Carolina mortality watch, and two farm jobs.",
+  headline: "NOAA's $13.5M aquaculture institute, farmed oysters boosting wild populations, and Dermo disease genomics",
+  dek: "This week: NOAA launches CIFARM, Maryland commits $31.5M to Chesapeake restoration, Cornell finds farmed oysters replenishing wild Long Island Sound populations, and Florida's Vertical Oyster Gardens hit 1,500 deployed.",
   heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/101845481/WDjqxWzBX95a3nkagP7cSW/us-oyster-hero-tidal-dashboard-KX8rMSR2KLBGPL35uirLBc.webp",
-  fullContent: `# US Oyster — AI Edition | May 18, 2026
+  fullContent: `# US Oyster — AI Edition | June 23, 2026
 
-**Edition window:** May 11–18, 2026
-**Prepared for:** Oceanfarmr USA
+**An Oceanfarmr USA Publication**
 
----
+This week's U.S. oyster signal spans federal investment, restoration science, and farm technology. NOAA has established a new $13.5 million Cooperative Institute to advance domestic aquaculture. Maryland's Governor announced $31.5 million for Chesapeake Bay ecological restoration. Cornell University published genetic evidence that farmed eastern oysters are actively replenishing wild populations in Long Island Sound. And new genomic selection research from the USDA offers a path toward breeding Dermo-resistant oyster strains.
 
 ## TL;DR
 
-This week's US oyster desk is led by a **Kona-based shellfish seed scale-up**, a **Washington farm-management breakthrough**, and a **Chesapeake policy fight** that could affect restored oyster reefs. Pacific Hybreed closed a **$1 million funding round** to expand commercial seed output in Hawaiʻi from **25 million to 200 million seeds per year**, with CEO Melissa DellaTorre positioning uniform seed performance as a labor-saving tool for farmers. University of Washington researchers reported a non-chemical burrowing shrimp control method that reduced live shrimp by **72% to 98%** in Willapa Bay trials. In the Chesapeake, the Chesapeake Bay Foundation warned that a House Appropriations Committee bill would remove protections and funding tied to oyster reef restoration.
-
----
-
-## Who's in the News
-
-### Melissa DellaTorre and Pacific Hybreed turn shellfish genetics into expansion capital
-
-Pacific Hybreed, an aquaculture biotechnology startup based in Kailua-Kona, closed a **$1 million funding round** backed by Hawaii Angels and Blue Startups. Under CEO **Melissa DellaTorre**, Pacific Hybreed plans to increase Kona output from **25 million seeds per year to 200 million** and broaden its breeding work beyond Pacific oysters.
-
-> "What we're trying to do is really reduce farm labor by having uniform, consistent growth and more predictable harvesting schedules." — Melissa DellaTorre, CEO of Pacific Hybreed.
-
----
+| Signal | What changed this week | Why it matters for growers |
+|---|---|---|
+| **NOAA CIFARM launch** | NOAA established the $13.5M Cooperative Institute Fostering Aquaculture Research and Markets (CIFARM) at UNH.[1] | Federal investment in domestic aquaculture R&D and market development signals long-term policy support for the sector. |
+| **Maryland $31.5M restoration** | Governor Wes Moore announced $31.5M for 25 ecological restoration projects across 188 Chesapeake Bay sites.[2] | Restoration funding directly supports the water quality and habitat conditions that oyster farming depends on. |
+| **Farmed oysters boost wild populations** | Cornell University study finds genetic evidence that farmed eastern oysters are breeding with wild populations in western and central Long Island Sound.[3] | Oyster farms may provide an unrecognised ecosystem service — wild stock replenishment — that strengthens the case for aquaculture expansion. |
+| **Dermo genomic selection** | USDA-ARS research shows genomic selection yields a 9% accuracy gain over pedigree-based selection for Dermo disease resistance in eastern oysters.[4] | A practical path toward breeding more resistant strains is emerging, which could reduce end-of-growout mortality losses. |
+| **Florida Vertical Oyster Gardens** | The Vertical Oyster Gardens Initiative has 1,500 gardens deployed in Volusia and Flagler counties, targeting 2,000 this year.[5] | Community-scale restoration is expanding rapidly, building public awareness and water-quality benefits at the dock level. |
 
 ## Industry News
 
-### New Orleans turns oyster demand into restoration supply
+### NOAA launches $13.5M aquaculture institute to expand domestic seafood production
 
-Chefs Brigade's **OysterNight New Orleans** returned on May 14 with more than **90 participating restaurants** across greater New Orleans featuring Louisiana and Gulf Coast oysters. The event is tied to the Coalition to Restore Coastal Louisiana's Oyster Shell Recycling Program, which previously recycled **8 tons of oyster shells in a single day**.
+The National Oceanic and Atmospheric Administration has established the Cooperative Institute Fostering Aquaculture Research and Markets (CIFARM), hosted by the University of New Hampshire. Backed by approximately $13.5 million in initial funding over five years, CIFARM aims to advance marine aquaculture research, address the United States' dependence on imported seafood, and support environmentally responsible farming practices.[1]
 
----
+The institute represents a significant federal commitment to domestic aquaculture at a time when the U.S. imports roughly 70–85% of its seafood. For oyster farmers, CIFARM's market development mandate is as important as its research function — the sector needs both better science and stronger consumer demand infrastructure.
+
+## Regulations & Compliance
+
+### Maryland commits $31.5 million for Chesapeake Bay ecological restoration
+
+Governor Wes Moore announced that the Maryland Department of Natural Resources is awarding $31.5 million in grants from the Chesapeake and Atlantic Coastal Bays Trust Fund. The funding covers 25 ecological restoration projects encompassing 188 sites, targeting improvements to water quality and wildlife habitats.[2]
+
+The investment is directly relevant to Maryland's $600 million seafood industry. Oyster farming in the Chesapeake depends on water quality thresholds that restoration projects help maintain. The funding also supports the broader oyster reef restoration work that underpins both commercial and ecological recovery in the Bay.
 
 ## Science & Innovation
 
-### Washington researchers test a non-chemical tool for burrowing shrimp
+### Cornell study: farmed oysters are genetically replenishing wild Long Island Sound populations
 
-University of Washington researchers led by Jennifer Ruesink tested a vibrocompaction platform that compacts sediment and traps shrimp in burrows. Field trials at four Willapa Bay sites reduced live shrimp by **72% to 98%**, comparable to pesticide control.
+A new study from Cornell University provides genetic evidence that farmed eastern oysters are adding to and interbreeding with wild eastern oyster populations in the western and central Long Island Sound.[3] Researchers suggest that oyster farms may provide a previously unrecognised ecosystem service by boosting nearby wild populations that have declined drastically over the last century.
 
-### Chesapeake acidification dashboard project brings farmers into adaptation planning
+The finding has significant implications for how aquaculture is perceived and regulated. If farms demonstrably support wild stock recovery, the case for permitting and expanding shellfish aquaculture in degraded coastal systems becomes substantially stronger.
 
-William & Mary and VIMS are leading a **$1.2 million NOAA-funded** project to help the Chesapeake Bay shellfish industry prepare for ocean and coastal acidification, including a web-based dashboard for farm-level decision-making.
+### Genomic selection offers a 9% accuracy gain for Dermo disease resistance
 
----
+Research published in *Frontiers in Genetics* evaluated marker-assisted and genomic selection for improving survival of eastern oysters infected with *Perkinsus marinus* (Dermo disease).[4] The study, led by USDA-ARS researchers at the National Cold Water Marine Aquaculture Center, found that while no single SNP explained more than 4% of genetic variance for survival, genomic selection using a 3,500-SNP subset yielded a 9% relative increase in accuracy over pedigree-based methods.
+
+Dermo disease is consistently ranked by producers as a top concern because it causes mortality toward the end of the growout cycle. This research offers a practical path toward breeding programs that can reduce that risk without requiring full-panel genotyping.
 
 ## Farm Management
 
-### North Carolina enters the high-watch window for oyster mortality
+### Machine learning automates oyster seed counting in hatcheries
 
-UNCW Shellfish Research Hatchery director Ami Wilbur noted that mortality pressure often peaks from **mid-May through mid-June**. Drought-driven salinity is also a concern. North Carolina has **525 active shellfish leases** covering just over **2,500 acres**.
+A new open-source image-recognition system has been developed to automate oyster seed counting in hatchery and nursery settings.[6] The system improves record-keeping accuracy, supports production tracking, and reduces the manual labour burden on hatchery staff. Automated seed counting is a foundational data quality improvement for any farm using digital management systems.
 
----
+## Community & Collaboration
 
-## Regulations
+### The Nature Conservancy's SOAR program: 5.6 million oysters purchased, 60+ acres of reef restored
 
-### Chesapeake reef protections enter a federal appropriations fight
+The Nature Conservancy's Supporting Oyster Aquaculture and Restoration (SOAR) program has purchased more than 5.6 million farmed oysters since 2020, helping regenerate over 60 acres of native shellfish reefs while sustaining farm jobs.[7] In Virginia, the Friends of the Rappahannock partnered with local farms and the Rappahannock Tribe to pilot growing diploid oysters for restoration purposes, reconnecting the Tribe with their cultural food source.
 
-The Chesapeake Bay Foundation warned on May 14 that the House Appropriations Committee passed a NOAA funding bill **32–28** that would allow commercial fishing on protected oyster reefs and cut restoration support before moving to the House floor.
+## Ecosystem Services
 
----
+### Vertical Oyster Gardens Initiative reaches 1,500 deployed in Florida
+
+The Vertical Oyster Gardens Initiative has approximately 1,500 vertical oyster gardens deployed across Volusia and Flagler counties in Florida, with a target of 2,000 by year-end.[5] The gardens are made from recycled oyster shells sourced from local restaurants, quarantined for six months, and suspended from docks to create juvenile oyster habitat. Each mature oyster filters up to 50 gallons of water per day, making the programme a meaningful water-quality intervention at community scale.
+
+The Coastal Conservation Association of Florida provides shells and supports expansion, while founder Chuck Gleichmann leads community engagement. The initiative is a replicable model for dock-level restoration that engages homeowners directly in coastal stewardship.
 
 ## Industry Calendar
 
 | Date | Event | Location |
 |---|---|---|
-| **May 22–24, 2026** | FoodieLand San Francisco | Cow Palace, San Francisco, CA |
-| **May 30, 2026** | Oysterfest at Chevy Chase Lake | Chevy Chase, MD |
-| **June 6, 2026** | New Bedford Oysterfest 2026 | New Bedford, MA |
-| **June 7, 2026** | "Aw, Shucks! The Extraordinary History & Outlook for CT Oysters" | New Haven, CT |
-
----
+| **June 27–28, 2026** | The Maine Oyster Festival | Freeport, ME |
+| **August 10, 2026** | Sanitation Control Procedures for Fish and Fishery Products | LSU AgCenter, Baton Rouge, LA |
+| **August 11–13, 2026** | Basic Seafood HACCP | LSU AgCenter, Baton Rouge, LA |
 
 ## Employment Board
 
-| Role | Employer | Location | Compensation |
+| Role | Employer | Location | Notes |
 |---|---|---|---|
-| **Farm Crew Worker** | Hog Island Oyster | Marshall, CA | **$22–$25/hour DOE** |
-| **Restaurant Manager** | Found Oyster | Los Angeles, CA | **$80,000–$90,000** |
-
----
+| **Aquaculture Apprenticeship Program** | Maine Aquaculture Apprenticeship (GMRI) | Maine | Paid apprenticeship combining farm work with structured training; applications accepted on a rolling basis. |
 
 ## Quote of the Week
 
-> "Burrowing shrimp have decimated our farm. We've lost 75% of our nursery ground and, as a result, the farm's carrying capacity has fallen from 265,000 bushels of market-ready oysters to 75,000 bushels." — Ken Wiegardt, Jolly Roger Oysters.
-
----
+> "A single oyster can filter up to 50 gallons of water a day. Over a year or two years, these vertical oyster gardens can start to recruit upwards of 50 to 100-plus oysters." — Logan Kennovin, Coastal Conservation Association Florida.[5]
 
 ## References
 
-1. https://www.htdc.org/pacific-hybreed-raises-1m-to-expand-kona-oyster-production/
-2. https://www.washington.edu/news/2026/05/14/a-new-method-could-help-washington-shellfish-farmers-control-a-pesky-shrimp/
-3. https://www.cbf.org/news/house-committee-passes-disastrous-bill-for-oyster-reefs-and-chesapeake-bay-restoration/
-4. https://www.chefsbrigade.org/oyster-night
-5. https://www.aquaculturenorthamerica.com/new-project-aims-to-protect-chesapeake-shellfish-industry-from-acidification/
-6. https://www.aol.com/news/weather-warms-challenges-ncs-shellfish-090133242.html
-7. https://www.newportlifemagazine.com/event/10th-annual-newport-oyster-chowder-festival/2026-05-17/
-8. https://aghires.com/career/391480/farm-crew-in-california-marshall
-9. https://culinaryagents.com/jobs/696453-Restaurant-Manager
+[1]: https://www.foodbusinessmea.com/noaa-launches-us13-5m-aquaculture-institute-to-expand-domestic-seafood-production/ "NOAA Launches $13.5M Aquaculture Institute — Food Business MEA"
+[2]: https://sbybiz.org/governor-wes-moore-announces-31-5-million-for-ecological-restoration-projects-to-improve-water-quality-in-local-waterways-and-the-chesapeake-bay-2/ "Governor Wes Moore Announces $31.5 Million for Ecological Restoration — SBY Biz"
+[3]: https://www.eurekalert.org/news-releases/1132620 "Farmed oysters may help replenish dwindling wild populations — EurekAlert / Cornell University"
+[4]: https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2026.1821653/full "Evaluation of genomic selection to improve survival of eastern oysters infected with Perkinsus marinus — Frontiers in Genetics"
+[5]: https://mynews13.com/fl/orlando/news/2026/06/20/vertical-oyster-gardens-expand-across-volusia-and-flagler-counties "Vertical Oyster Gardens expand across Volusia and Flagler counties — Spectrum News 13"
+[6]: https://www.sciencedirect.com/science/article/pii/S0144860926000889 "Applying Machine Learning Tools to Advance Quality Control in Oyster Seed Counting — Aquacultural Engineering"
+[7]: https://blog.nature.org/2026/06/20/resilience-through-restoration-oyster-growers-find-new-opportunities-in-conservation/ "Resilience Through Restoration — The Nature Conservancy"
+[8]: https://92moose.fm/upcoming-maine-festivals-summer-2026/ "Maine Oyster Festival June 27–28, 2026 — 92 Moose"
+[9]: https://www.gmri.org/stories/from-apprentice-to-manager-and-mentor-kat-lipps-full-circle-journey-in-maine-aquaculture/ "From Apprentice to Manager and Mentor: Kat Lipp's Full-Circle Journey in Maine Aquaculture — GMRI"
 `,
   briefing: [
-    "This week's US oyster desk is led by a Kona-based shellfish seed scale-up, a Washington farm-management breakthrough, and a Chesapeake policy fight that could affect restored oyster reefs. Pacific Hybreed closed a $1 million funding round to expand commercial seed output in Hawaiʻi from 25 million to 200 million seeds per year.",
-    "For operators, the most urgent watch items are the Chesapeake appropriations bill — which passed committee 32–28 and could strip oyster reef protections — and the North Carolina mortality window running from mid-May through mid-June. Farms should review salinity trends, mortality logs, and Vibrio-season readiness this week."
+    "NOAA has launched CIFARM, a $13.5M cooperative institute at UNH focused on domestic aquaculture research and market development.",
+    "Cornell University genetic research shows farmed eastern oysters are actively replenishing wild populations in Long Island Sound — a new ecosystem service argument for aquaculture expansion."
   ],
   metrics: [
-    { label: "Pacific Hybreed funding round", value: "$1M", tone: "green" },
-    { label: "Shrimp reduction in UW trials", value: "72–98%", tone: "green" },
-    { label: "Chesapeake bill vote margin", value: "32–28", tone: "amber" },
-    { label: "NC active shellfish leases", value: "525", tone: "amber" }
+    { label: "NOAA CIFARM funding", value: "$13.5M", tone: "green" },
+    { label: "Maryland restoration grants", value: "$31.5M", tone: "green" },
+    { label: "Genomic selection accuracy gain", value: "+9%", tone: "green" },
+    { label: "FL vertical oyster gardens", value: "1,500", tone: "green" }
   ],
-  topSignals: ["Pacific Hybreed seed scale-up", "UW shrimp control breakthrough", "Chesapeake appropriations fight", "NC mortality watch window"],
+  topSignals: ["NOAA CIFARM launch", "Maryland $31.5M Chesapeake restoration", "Farmed oysters replenishing wild LI Sound populations", "Dermo genomic selection breakthrough"],
   quote: {
-    text: "Burrowing shrimp have decimated our farm. We've lost 75% of our nursery ground and, as a result, the farm's carrying capacity has fallen from 265,000 bushels of market-ready oysters to 75,000 bushels.",
-    speaker: "Ken Wiegardt, Jolly Roger Oysters",
-    context: "Speaking to UW News about the need for effective burrowing shrimp control in Willapa Bay."
+    text: "A single oyster can filter up to 50 gallons of water a day. Over a year or two years, these vertical oyster gardens can start to recruit upwards of 50 to 100-plus oysters.",
+    speaker: "Logan Kennovin, Coastal Conservation Association Florida",
+    context: "Speaking about the Vertical Oyster Gardens Initiative expanding across Volusia and Flagler counties in Florida."
   }
 };
 
 export const newsItems: NewsItem[] = [
   {
-    id: "pacific-hybreed-raise",
-    title: "Pacific Hybreed raises $1M to scale Kona oyster seed production to 200M per year",
+    id: "noaa-cifarm-launch",
+    title: "NOAA launches $13.5M Cooperative Institute Fostering Aquaculture Research and Markets",
     category: "Industry",
-    region: "Pacific / Hawaiʻi",
-    summary: "Pacific Hybreed closed a $1 million funding round backed by Hawaii Angels and Blue Startups. CEO Melissa DellaTorre plans to expand Kona output from 25 million to 200 million seeds per year and broaden breeding beyond Pacific oysters.",
-    whyItMatters: "Selective breeding and hatchery scale are being treated as productivity infrastructure. Uniform seed reduces grading pressure, smooths harvest scheduling, and lowers labor intensity — a direct farm-economics argument for premium seed.",
-    imageUrl: "https://d2xsxph8kpxj0f.cloudfront.net/101845481/WDjqxWzBX95a3nkagP7cSW/us-oyster-market-dashboard-StAj55tMD9GGbsv5WFHdtt.webp",
-    sourceName: "Hawaiʻi Technology Development Corporation",
-    sourceUrl: "https://www.htdc.org/pacific-hybreed-raises-1m-to-expand-kona-oyster-production/"
+    region: "National",
+    summary: "NOAA established CIFARM at the University of New Hampshire, backed by $13.5M over five years to advance marine aquaculture research, reduce seafood import dependence, and support environmentally responsible farming.",
+    whyItMatters: "Federal investment in aquaculture R&D and market development signals long-term policy support. The market development mandate is as important as the research function — the sector needs both better science and stronger consumer demand infrastructure.",
+    sourceName: "Food Business MEA",
+    sourceUrl: "https://www.foodbusinessmea.com/noaa-launches-us13-5m-aquaculture-institute-to-expand-domestic-seafood-production/"
   },
   {
-    id: "oysternight-new-orleans",
-    title: "OysterNight New Orleans returns with 90+ restaurants and a shell-recycling target",
-    category: "Industry",
-    region: "Gulf",
-    summary: "Chefs Brigade's OysterNight returned on May 14 with more than 90 participating restaurants featuring Louisiana and Gulf Coast oysters. The event is tied to the Coalition to Restore Coastal Louisiana's Oyster Shell Recycling Program, which previously recycled 8 tons of shells in a single day.",
-    whyItMatters: "The most valuable oyster promotions now connect provenance, restaurant storytelling, shell recovery, and restoration metrics into one public-facing narrative. This is the model for circular oyster marketing.",
-    sourceName: "Chefs Brigade",
-    sourceUrl: "https://www.chefsbrigade.org/oyster-night"
-  },
-  {
-    id: "uw-burrowing-shrimp",
-    title: "UW researchers achieve 72–98% burrowing shrimp reduction without pesticides in Willapa Bay",
-    category: "Science",
-    region: "Pacific Northwest",
-    summary: "University of Washington researchers led by Jennifer Ruesink tested a vibrocompaction platform that compacts sediment and traps shrimp in burrows. Field trials at four Willapa Bay sites reduced live shrimp by 72% to 98%, comparable to pesticide control.",
-    whyItMatters: "Washington growers have been without chemical control options since 2018. This proof-of-principle method gives the industry a non-chemical pathway to sediment stability and nursery ground recovery — even if scale-up and ecological review remain ahead.",
-    imageUrl: "https://d2xsxph8kpxj0f.cloudfront.net/101845481/WDjqxWzBX95a3nkagP7cSW/us-oyster-ecosystem-service-AGxkuMLLmy9yQ54S5aNdWp.webp",
-    sourceName: "University of Washington News",
-    sourceUrl: "https://www.washington.edu/news/2026/05/14/a-new-method-could-help-washington-shellfish-farmers-control-a-pesky-shrimp/"
-  },
-  {
-    id: "chesapeake-acidification-dashboard",
-    title: "VIMS and William & Mary launch $1.2M NOAA-funded acidification dashboard for Chesapeake shellfish farms",
-    category: "Science",
-    region: "Mid-Atlantic",
-    summary: "A $1.2 million NOAA-funded project led by William & Mary's Batten School and VIMS will build a web-based dashboard to help Chesapeake Bay shellfish farmers plan around ocean and coastal acidification, with an advisory committee that includes industry members.",
-    whyItMatters: "Acidification is being framed as a farm-planning problem, not only a chemistry problem. Tools that reflect lived operating conditions give growers actionable signals rather than only laboratory indicators.",
-    sourceName: "Aquaculture North America",
-    sourceUrl: "https://www.aquaculturenorthamerica.com/new-project-aims-to-protect-chesapeake-shellfish-industry-from-acidification/"
-  },
-  {
-    id: "chesapeake-appropriations-fight",
-    title: "House Appropriations bill could strip Chesapeake oyster reef protections and restoration funding",
+    id: "maryland-chesapeake-restoration",
+    title: "Maryland commits $31.5 million for Chesapeake Bay ecological restoration across 188 sites",
     category: "Regulation",
     region: "Mid-Atlantic",
-    summary: "The Chesapeake Bay Foundation warned on May 14 that the House Appropriations Committee passed a NOAA funding bill 32–28 that would allow commercial fishing on protected oyster reefs and cut restoration support before moving to the House floor.",
-    whyItMatters: "Restoration reefs, sanctuary rules, and NOAA-supported oyster programs influence public confidence, ecosystem-service accounting, and long-term recruitment across the Bay. This is the edition's urgent policy watch.",
+    summary: "Governor Wes Moore announced $31.5M from the Chesapeake and Atlantic Coastal Bays Trust Fund for 25 ecological restoration projects at 188 sites, targeting water quality and wildlife habitat improvements.",
+    whyItMatters: "Restoration funding directly supports the water quality conditions that oyster farming depends on. The investment also underpins oyster reef restoration work critical to both commercial and ecological recovery in the Chesapeake.",
     urgent: true,
-    imageUrl: "https://d2xsxph8kpxj0f.cloudfront.net/101845481/WDjqxWzBX95a3nkagP7cSW/us-oyster-regulation-closure-m5gJt9yfksN9bmEJUnHwyL.webp",
-    sourceName: "Chesapeake Bay Foundation",
-    sourceUrl: "https://www.cbf.org/news/house-committee-passes-disastrous-bill-for-oyster-reefs-and-chesapeake-bay-restoration/"
+    sourceName: "SBY Biz",
+    sourceUrl: "https://sbybiz.org/governor-wes-moore-announces-31-5-million-for-ecological-restoration-projects-to-improve-water-quality-in-local-waterways-and-the-chesapeake-bay-2/"
   },
   {
-    id: "nc-mortality-watch",
-    title: "North Carolina enters mid-May to mid-June oyster mortality watch window",
-    category: "Regulation",
-    region: "Southeast",
-    summary: "UNCW Shellfish Research Hatchery director Ami Wilbur noted that mortality pressure often peaks from mid-May through mid-June. NC Shellfish Growers Association president Chris Matteo flagged drought-driven salinity as a concern across the state's 525 active leases.",
-    whyItMatters: "Now is the week for salinity checks, mortality log reviews by gear type and site, cold-chain readiness for warmer weather, and clear Vibrio-season messaging to buyers and consumers.",
-    urgent: true,
-    sourceName: "Wilmington Star-News via AOL",
-    sourceUrl: "https://www.aol.com/news/weather-warms-challenges-ncs-shellfish-090133242.html"
-  },
-  {
-    id: "newport-oyster-festival",
-    title: "10th Annual Newport Oyster & Chowder Festival showcases Rhode Island's 75+ oyster farms",
-    category: "Industry",
+    id: "cornell-farmed-oysters-wild-populations",
+    title: "Cornell study finds farmed eastern oysters genetically replenishing wild Long Island Sound populations",
+    category: "Science",
     region: "Northeast",
-    summary: "The 10th Annual Newport Oyster & Chowder Festival ran at Bowen's Wharf on May 16–17, showcasing Rhode Island oyster farms, local restaurants, chowders, and live music. Rhode Island now has more than 75 oyster farms.",
-    whyItMatters: "Consumer events that connect working waterfronts to local identity build the public case for aquaculture. Regional flavor diversity is a competitive asset that festivals help communicate at scale.",
-    sourceName: "Newport Life Magazine",
-    sourceUrl: "https://www.newportlifemagazine.com/event/10th-annual-newport-oyster-chowder-festival/2026-05-17/"
+    summary: "Cornell University researchers found genetic evidence that farmed eastern oysters are adding to and interbreeding with wild eastern oyster populations in the western and central Long Island Sound, suggesting farms provide a previously unrecognised wild stock replenishment service.",
+    whyItMatters: "If farms demonstrably support wild stock recovery, the case for permitting and expanding shellfish aquaculture in degraded coastal systems becomes substantially stronger. This finding could reshape regulatory and public perception of oyster farming.",
+    urgent: true,
+    imageUrl: "https://d2xsxph8kpxj0f.cloudfront.net/101845481/WDjqxWzBX95a3nkagP7cSW/us-oyster-ecosystem-service-AGxkuMLLmy9yQ54S5aNdWp.webp",
+    sourceName: "EurekAlert / Cornell University",
+    sourceUrl: "https://www.eurekalert.org/news-releases/1132620"
   },
   {
-    id: "willapa-bay-carrying-capacity",
-    title: "Willapa Bay farm loses 75% of nursery ground to burrowing shrimp, capacity falls from 265K to 75K bushels",
+    id: "dermo-genomic-selection",
+    title: "USDA-ARS research: genomic selection yields 9% accuracy gain for Dermo disease resistance in eastern oysters",
     category: "Science",
-    region: "Pacific Northwest",
-    summary: "Ken Wiegardt of Jolly Roger Oysters said burrowing shrimp caused the loss of 75% of his nursery ground and reduced farm carrying capacity from 265,000 bushels of market-ready oysters to 75,000 bushels.",
-    whyItMatters: "Sediment stability, nursery ground, and benthic pest control are business-continuity issues. The UW shrimp-control research is directly responding to this kind of production loss.",
-    sourceName: "University of Washington News",
-    sourceUrl: "https://www.washington.edu/news/2026/05/14/a-new-method-could-help-washington-shellfish-farmers-control-a-pesky-shrimp/"
+    region: "National",
+    summary: "Research published in Frontiers in Genetics evaluated marker-assisted and genomic selection for improving survival of eastern oysters infected with Perkinsus marinus. Genomic selection using a 3,500-SNP subset yielded a 9% relative accuracy gain over pedigree-based methods.",
+    whyItMatters: "Dermo disease causes mortality at the end of the growout cycle and is consistently ranked a top concern by producers. This research offers a practical path toward breeding more resistant strains without requiring full-panel genotyping.",
+    sourceName: "Frontiers in Genetics",
+    sourceUrl: "https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2026.1821653/full"
+  },
+  {
+    id: "ml-oyster-seed-counting",
+    title: "Machine learning tool automates oyster seed counting to improve hatchery record-keeping",
+    category: "Science",
+    region: "National",
+    summary: "A new open-source image-recognition system automates oyster seed counting in hatchery and nursery settings, improving record-keeping accuracy, production tracking, and reducing manual labour burden.",
+    whyItMatters: "Automated seed counting is a foundational data quality improvement for any farm using digital management systems. Accurate seed counts underpin production planning, stocking decisions, and ESG reporting.",
+    sourceName: "Aquacultural Engineering / ScienceDirect",
+    sourceUrl: "https://www.sciencedirect.com/science/article/pii/S0144860926000889"
+  },
+  {
+    id: "nature-conservancy-soar",
+    title: "The Nature Conservancy's SOAR program: 5.6 million oysters purchased, 60+ acres of reef restored since 2020",
+    category: "Industry",
+    region: "Mid-Atlantic",
+    summary: "TNC's Supporting Oyster Aquaculture and Restoration program has purchased more than 5.6 million farmed oysters since 2020, regenerating over 60 acres of native shellfish reefs. In Virginia, a partnership with the Rappahannock Tribe pilots diploid oysters for cultural and restoration purposes.",
+    whyItMatters: "The SOAR model demonstrates that aquaculture and restoration can be commercially and ecologically linked. The Rappahannock Tribe partnership adds a cultural dimension that strengthens community support for oyster farming.",
+    sourceName: "The Nature Conservancy",
+    sourceUrl: "https://blog.nature.org/2026/06/20/resilience-through-restoration-oyster-growers-find-new-opportunities-in-conservation/"
+  },
+  {
+    id: "vertical-oyster-gardens-florida",
+    title: "Vertical Oyster Gardens Initiative reaches 1,500 deployed in Volusia and Flagler counties, Florida",
+    category: "Science",
+    region: "Southeast",
+    summary: "The Vertical Oyster Gardens Initiative has approximately 1,500 gardens deployed across Volusia and Flagler counties, targeting 2,000 by year-end. Gardens are made from recycled restaurant shells suspended from docks to create juvenile oyster habitat and filter excess nutrients.",
+    whyItMatters: "Community-scale restoration is expanding rapidly. Each mature oyster filters up to 50 gallons of water per day, making the programme a meaningful water-quality intervention. The model is replicable and engages homeowners directly in coastal stewardship.",
+    sourceName: "Spectrum News 13",
+    sourceUrl: "https://mynews13.com/fl/orlando/news/2026/06/20/vertical-oyster-gardens-expand-across-volusia-and-flagler-counties"
+  },
+  {
+    id: "maine-oyster-festival-2026",
+    title: "Maine Oyster Festival returns to Freeport June 27–28 with free admission",
+    category: "Calendar",
+    region: "Northeast",
+    summary: "The Maine Oyster Festival in Freeport celebrates the state's fast-growing oyster aquaculture industry with tastings from farms across Maine, shucking competitions, live music, and ecosystem education. Admission is free.",
+    whyItMatters: "Consumer-facing events build market awareness and direct relationships between farmers and buyers. Maine's oyster industry is one of the fastest-growing in the country and the festival is a key visibility moment.",
+    sourceName: "92 Moose / Visit Freeport",
+    sourceUrl: "https://92moose.fm/upcoming-maine-festivals-summer-2026/"
   }
 ];
 
 export const calendarEvents: CalendarEvent[] = [
   {
-    id: "foodieland-sf",
-    title: "FoodieLand San Francisco",
-    isoDate: "2026-05-22T10:00:00-07:00",
-    dateLabel: "May 22–24, 2026",
-    location: "Cow Palace, San Francisco, CA",
-    note: "Regional oyster vendors including NOLA-style oyster offerings are promoting attendance. Confirm vendor details before travel.",
-    url: "https://foodielandnightmarket.com/"
+    id: "maine-oyster-festival-2026",
+    title: "The Maine Oyster Festival",
+    isoDate: "2026-06-27T10:00:00-04:00",
+    dateLabel: "June 27–28, 2026",
+    location: "Freeport, ME",
+    note: "Free admission. Oyster tastings from farms across Maine, shucking competitions, live music, and ecosystem education.",
+    url: "https://92moose.fm/upcoming-maine-festivals-summer-2026/"
   },
   {
-    id: "oysterfest-chevy-chase",
-    title: "Oysterfest at Chevy Chase Lake",
-    isoDate: "2026-05-30T12:00:00-04:00",
-    dateLabel: "May 30, 2026",
-    location: "Chevy Chase, MD",
-    note: "Second annual Oysterfest with oysters from local restaurants, seafood, drinks, and live music.",
-    url: "https://www.chevychaselake.com/"
+    id: "lsu-sanitation-control-2026",
+    title: "Sanitation Control Procedures for Fish and Fishery Products",
+    isoDate: "2026-08-10T08:00:00-05:00",
+    dateLabel: "August 10, 2026",
+    location: "LSU AgCenter, Baton Rouge, LA",
+    note: "Regulatory compliance training for seafood processors and handlers.",
+    url: "https://louisianadirectseafood.com/news-events/"
   },
   {
-    id: "new-bedford-oysterfest",
-    title: "New Bedford Oysterfest 2026",
-    isoDate: "2026-06-06T12:00:00-04:00",
-    dateLabel: "June 6, 2026",
-    location: "Cisco Kitchen & Bar, New Bedford, MA",
-    note: "South Coast aquaculture celebration with local growers and waterfront programming.",
-    url: "https://www.ciscokitchenandbar.com/"
-  },
-  {
-    id: "ct-oyster-history",
-    title: "\"Aw, Shucks! The Extraordinary History & Outlook for CT Oysters\"",
-    isoDate: "2026-06-07T14:00:00-04:00",
-    dateLabel: "June 7, 2026",
-    location: "Pardee-Morris House, New Haven, CT",
-    note: "Public-history and outlook event focused on Connecticut oysters.",
-    url: "https://www.nhm.org/"
+    id: "lsu-basic-haccp-2026",
+    title: "Basic Seafood HACCP",
+    isoDate: "2026-08-11T08:00:00-05:00",
+    dateLabel: "August 11–13, 2026",
+    location: "LSU AgCenter, Baton Rouge, LA",
+    note: "Three-day HACCP certification course for seafood industry professionals.",
+    url: "https://louisianadirectseafood.com/news-events/"
   }
 ];
 
 export const jobs: JobPost[] = [
   {
-    id: "hog-island-farm-crew",
-    role: "Farm Crew Worker",
-    employer: "Hog Island Oyster",
-    location: "Marshall, CA",
-    compensation: "$22–$25/hour DOE",
-    deadline: "Open until filled",
-    applyUrl: "https://aghires.com/career/391480/farm-crew-in-california-marshall",
-    summary: "Full-time farm operations role covering harvesting, sorting, seed planting, husbandry, gear maintenance, machinery support, and environmental cleanup on Tomales Bay."
-  },
-  {
-    id: "found-oyster-manager",
-    role: "Restaurant Manager",
-    employer: "Found Oyster",
-    location: "Los Angeles, CA",
-    compensation: "$80,000–$90,000",
-    deadline: "Posting expires June 15, 2026",
-    applyUrl: "https://culinaryagents.com/jobs/696453-Restaurant-Manager",
-    summary: "Full-time floor leadership role with a path to General Manager and hands-on oyster-service expectations, including possible shucking shifts at one of LA's leading oyster bars."
+    id: "gmri-aquaculture-apprenticeship",
+    role: "Maine Aquaculture Apprenticeship Program",
+    employer: "Gulf of Maine Research Institute (GMRI)",
+    location: "Maine (various host farms)",
+    compensation: "Paid apprenticeship — see GMRI for current rates",
+    deadline: "Rolling applications",
+    applyUrl: "https://www.gmri.org/stories/from-apprentice-to-manager-and-mentor-kat-lipps-full-circle-journey-in-maine-aquaculture/",
+    summary: "Structured apprenticeship combining paid work on a host farm with training. Kat Lipp, now General Manager at Mere Point Oyster Company, completed the first cohort and now mentors incoming apprentices."
   }
 ];
