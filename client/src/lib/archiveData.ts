@@ -17,6 +17,23 @@ export type ArchivedEdition = {
 
 export const archivedEditions: ArchivedEdition[] = [
   {
+    id: "2026-06-23",
+    date: "June 23, 2026",
+    isoDate: "2026-06-23",
+    headline: "NOAA's $13.5M aquaculture institute, farmed oysters boosting wild populations, and Dermo disease genomics",
+    summary: "NOAA launches CIFARM, Maryland commits $31.5M to Chesapeake restoration, Cornell finds farmed oysters replenishing wild Long Island Sound populations, and Florida's Vertical Oyster Gardens hit 1,500 deployed.",
+    topStories: [
+      "NOAA CIFARM launch",
+      "Maryland $31.5M Chesapeake restoration",
+      "Farmed oysters replenishing wild LI Sound populations",
+      "Dermo genomic selection breakthrough"
+    ],
+    urgentCount: 2,
+    tags: ["Industry", "Regulation", "Science", "Ecosystem"],
+    regions: ["National", "Mid-Atlantic", "Northeast", "Southeast"],
+    fullContent: "Edition of June 23, 2026. NOAA established a new $13.5 million Cooperative Institute to advance domestic aquaculture. Maryland's Governor announced $31.5 million for Chesapeake Bay ecological restoration. Cornell University published genetic evidence that farmed eastern oysters are actively replenishing wild populations in Long Island Sound. And new genomic selection research from the USDA offers a path toward breeding Dermo-resistant oyster strains."
+  },
+  {
     id: "2026-05-24",
     date: "May 24, 2026",
     isoDate: "2026-05-24",
