@@ -17,6 +17,124 @@ export type ArchivedEdition = {
 
 export const archivedEditions: ArchivedEdition[] = [
   {
+    id: "2026-08-23",
+    date: "August 23, 2026",
+    isoDate: "2026-08-23",
+    headline: "Freeze relief, Dermo findings, and new aquaculture signals",
+    summary: "New York sought federal freeze relief for Long Island shellfish farms, URI and VIMS reported a potential Dermo benefit from oyster aquaculture, North Carolina issued temporary closures, and NOAA opened its future Aquaculture Opportunity Areas process.",
+    topStories: [
+      "New York federal freeze-relief request",
+      "URI–VIMS Dermo farm–wild finding",
+      "North Carolina temporary shellfish closures",
+      "NOAA future Aquaculture Opportunity Areas input"
+    ],
+    urgentCount: 2,
+    tags: ["Industry", "Science", "Regulation", "Community", "Ecosystem", "Farm"],
+    regions: ["Northeast", "Mid-Atlantic", "Southeast", "National"],
+    fullContent: `# US Oyster — AI Edition | August 23, 2026
+**An Oceanfarmr USA Publication**
+
+This week’s operational picture combines near-term recovery and compliance signals with longer-horizon opportunity. New York has requested a USDA disaster designation following winter freeze damage to Long Island shellfish farms. At the same time, a URI–VIMS research finding points to a potentially positive relationship between farmed oysters and Dermo loads in nearby wild populations. North Carolina growers face immediate temporary sanitation closures, while NOAA is seeking input on where future Aquaculture Opportunity Areas should be assessed.
+
+## TL;DR
+
+| Signal | What changed | Why it matters for growers |
+|---|---|---|
+| **Long Island freeze relief** | New York requested a USDA disaster designation after an estimated $2.3965 million in shellfish-aquaculture damage. [1] | Eligible growers could gain access to a federal emergency-loan pathway if the request is approved. |
+| **Dermo research** | URI and VIMS report that growing farmed oysters can reduce Dermo disease loads in wild oysters. [2] | The result strengthens the case for farm–wild monitoring and disease-aware farm siting. |
+| **North Carolina closures** | Temporary shellfish closures began on 22 August across waters in four coastal counties. [3] | Harvest, inventory and customer communication plans should align with the latest official sanitation map. |
+| **Future aquaculture areas** | NOAA’s RFI on future Aquaculture Opportunity Areas is open through 14 September; a public session follows on 31 August. [4] | Growers, tribes, working-waterfront groups and researchers have a defined window to supply siting evidence. |
+
+## Industry News
+
+### New York requests federal freeze relief for Long Island shellfish farms
+
+Governor Kathy Hochul has requested a USDA Secretarial Disaster Designation for Suffolk County after a February freeze caused an estimated $2.3965 million in damage across Long Island shellfish aquaculture. If approved, operators in Suffolk and contiguous counties could apply for USDA Farm Service Agency emergency loans of up to $500,000. New York’s Department of Environmental Conservation is also collecting fishery-revenue data for a possible NOAA Fishery Disaster Declaration pathway. [1]
+
+For farms, this is a recovery-planning signal rather than an approved programme: preserve repair invoices, loss records, production data and revenue documentation while the designation request is considered.
+
+## Science & Innovation
+
+### URI and VIMS research links farmed oysters to lower wild-oyster Dermo loads
+
+A University of Rhode Island and Virginia Institute of Marine Science research report finds that oyster aquaculture can reduce disease loads in wild oysters affected by Dermo, a naturally occurring parasite that is distinct from human-health bacteria such as *Vibrio*. [2]
+
+The practical implication is not that disease risk disappears. Rather, the result supports closer farm–wild disease monitoring and gives growers a stronger evidence base when explaining potential ecological interactions with regulators and neighbours.
+
+## Regulations & Compliance
+
+### North Carolina posts new temporary shellfish closures
+
+North Carolina’s temporary shellfish closures took effect at 7:35 am on 22 August. The listed waters span New Hanover, Pender, Onslow and Carteret counties, including parts of Middle Sound, Topsail Sound, Stump Sound and the Newport River. [3]
+
+Harvesters should treat the proclamation as an immediate operational control: check the current sanitation map before harvest, maintain lot-level traceability and communicate any supply interruption promptly.
+
+### NOAA seeks input on the next Aquaculture Opportunity Areas
+
+NOAA’s request for information asks stakeholders where future Aquaculture Opportunity Areas should be evaluated nationally. Written comments to docket NOAA-NMFS-2026-2179 are due by 14 September 2026, and NOAA will hold a public listening session on 31 August, from 3–4 pm EDT. [4]
+
+The request specifically invites evidence on candidate regions, species and culture types, siting parameters, protected-species interactions, fisheries overlap, cultural resources and recreation. Shellfish stakeholders can use this window to put local operating knowledge into the national planning record.
+
+## Community & Collaboration
+
+### Basin Oyster Project records evidence of wild recruitment in Maine
+
+In Phippsburg, Maine, the seven-year Basin Oyster Project is working toward a self-sustaining wild oyster reef in the protected Basin inlet of the New Meadows River. The collaboration began with The Nature Conservancy and includes Colby College, the Maine Department of Environmental Protection, Casco Bay Estuary Partnership and the Town of Phippsburg Shellfish Committee. Recent fieldwork documented a wild American oyster that had grown from a free-floating larva and survived winter conditions. [5]
+
+The project remains a careful restoration experiment, but its partnership model offers a useful template for linking research, local government and coastal community stewardship.
+
+## Ecosystem Services
+
+### North Carolina habitat-plan review puts oyster recovery areas in scope
+
+North Carolina’s Marine Fisheries Commission considered releasing a proposed 2026 amendment to the Coastal Habitat Protection Plan for public and advisory review. The amendment would not itself create restrictions, but it could begin a broader pathway to consider protections for submerged vegetation and deep-water oyster recovery areas, with further review before possible final action in November. [6]
+
+For growers and restoration practitioners, the key point is to distinguish the current review from an adopted rule while engaging early with the evidence base on habitat, gear interactions and working-waterfront access.
+
+## Farm Management
+
+### Use the closure and disease signals to tighten operational records
+
+This week’s management priority is disciplined documentation. Confirm harvest eligibility against official closure maps before loading product; retain time, location and lot records; and make sure customer notices can be issued quickly. Pair that discipline with routine health observations and seed-source discussions: the URI–VIMS Dermo result is a reason to improve monitoring, not a substitute for biosecurity or local disease advice. [2] [3]
+
+## Industry Calendar
+
+| Date | Event | Location |
+|---|---|---|
+| **August 31, 2026** | NOAA public listening session: future Aquaculture Opportunity Areas | Online · 3–4 pm EDT |
+| **September 14, 2026** | NOAA comments close: future Aquaculture Opportunity Areas | Online |
+| **September 18, 2026** | Application deadline: UF hard-clam research and breeding postdoctoral role | Florida / online |
+| **September 26, 2026** | Shuck It Up Oyster Festival | The Rumor Reel, Pasadena, MD |
+
+## Employment Board
+
+| Role | Employer | Location | Deadline |
+|---|---|---|---|
+| **Postdoctoral Research Associate – Hard Clam Research and Breeding Program Leader** | University of Florida | Florida | September 18, 2026 |
+
+## Who’s in the News
+
+### Cait Cleaver — Phippsburg, Maine
+
+**Project spotlight: Basin Oyster Project field leadership.** Colby College environmental studies assistant professor Cait Cleaver is part of the team testing whether wild oysters can again survive, recruit and eventually form a self-sustaining reef in Maine’s cold, variable coastal conditions. [5]
+
+The project’s value lies in the long horizon: it joins ecological monitoring with local stewardship and makes the constraints of northern oyster restoration visible rather than assuming a model from warmer regions will transfer unchanged.
+
+## Quote of the Week
+
+> “With freezing temperatures that lasted for several weeks, the Long Island coast saw ice conditions like they haven't experienced in years, leading to a halt in operations and damage to equipment that will cost the aquaculture industry millions of dollars.” — Gov. Kathy Hochul [1]
+
+## References
+
+[1]: https://www.nationalfisherman.com/new-york-seeks-disaster-designation-for-oyster-farmers-hit-by-winter-freeze "New York seeks disaster designation for oyster farmers hit by winter freeze — National Fisherman"
+[2]: https://www.seafoodnews.com/Story/1126693/URI-and-VIMS-Researchers-Show-Aquaculture-Oysters-Can-Limit-Spread-of-Dermo-in-Wild-Oysters "URI and VIMS Researchers Show Aquaculture Oysters Can Limit Spread of Dermo in Wild Oysters — SeafoodNews"
+[3]: https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/polluted-area-proclamations "Polluted Area Proclamations — North Carolina DEQ"
+[4]: https://www.northeastoceandata.org/request-for-information-and-public-listening-session-future-aquaculture-opportunity-areas/ "Request for Information and Public Listening Session – Future Aquaculture Opportunity Areas"
+[5]: https://themainemonitor.org/restoring-wild-oyster-reefs/ "They wanted to restore wild oyster reefs to the Maine coast — The Maine Monitor"
+[6]: https://www.nationalfisherman.com/north-carolina-weighs-habitat-protections-fishing-licenses "North Carolina weighs habitat protections, fishing licenses — National Fisherman"
+`
+  },
+  {
     id: "2026-08-10",
     date: "August 10, 2026",
     isoDate: "2026-08-10",
