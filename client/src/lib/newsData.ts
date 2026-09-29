@@ -38,242 +38,249 @@ export type JobPost = {
 
 export const oceanfarmrLogo = "https://d2xsxph8kpxj0f.cloudfront.net/101845481/YdoSnj7mHMWmcidNEoA8jc/RGBLogo_Oceanfarmr_Inline_WhiteandGreen_a90a5b7e.webp";
 
-// Edition: September 17, 2026
+// Edition: September 29, 2026
 export const currentEdition = {
-  id: "2026-09-17",
-  date: "September 17, 2026",
-  shortDate: "Sep 17",
+  id: "2026-09-29",
+  date: "September 29, 2026",
+  shortDate: "Sep 29",
   title: "US Oyster — AI Edition",
-  headline: "Mississippi oyster rebound, winter cover, and larval science",
-  dek: "This week: Mississippi’s surveyed reefs improve, Rhode Island posts rain closures, Massachusetts gains an insurance option, and new research clarifies how oyster larvae feed.",
+  headline: "Season opening, storm closure and a bloom-response playbook",
+  dek: "This week: Mississippi sets its opening order, Massachusetts posts a precautionary closure, Virginia releases loss-estimation guidance, and New Jersey advances aquaculture law reform.",
   heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/101845481/WDjqxWzBX95a3nkagP7cSW/us-oyster-hero-tidal-dashboard-KX8rMSR2KLBGPL35uirLBc.webp",
-  fullContent: `# US Oyster — AI Edition | September 17, 2026
+  fullContent: `# US Oyster — AI Edition | September 29, 2026
 **An Oceanfarmr USA Publication**
 
-This week’s U.S. oyster briefing connects a Gulf recovery indicator with immediate sanitation controls, a practical insurance change for Massachusetts growers, and two research signals from the Northeast. Mississippi’s surveyed Mississippi Sound reefs are estimated at just under 400,000 sacks ahead of the 1 October season opening. Rhode Island has emergency rain closures in named growing areas, while USDA’s new Winter Removal Option gives eligible Massachusetts container growers a lower-cost coverage choice when product is moved into winter storage. [1] [2] [3]
+This week’s operating picture combines a scheduled Gulf opening with active weather and bloom responses in the Northeast and Mid-Atlantic. Mississippi’s public-oyster season is set to open at legal sunrise on 1 October in four named conditionally approved areas. In Massachusetts, a precautionary state-wide shellfishing closure began before the weekend nor’easter and remains subject to official status updates. Virginia Extension and VIMS have also issued a practical protocol for documenting oyster losses after the harmful algal bloom affecting parts of Chesapeake Bay and Eastern Shore waters. [1] [2] [3]
 
 ## TL;DR
 
 | Signal | What changed | Why it matters for growers |
 |---|---|---|
-| **Mississippi survey estimate** | MDMR reported just under 400,000 sacks across surveyed Mississippi Sound reefs, compared with about 275,000 a year earlier. [1] | The 1 October season opening is a stronger production signal, but the figure is a survey estimate rather than a guarantee of individual harvest outcomes. |
-| **Rhode Island rain closures** | Emergency closures began 14 September in Upper Bay Area B and Growing Areas 3 and 9 after heavy rain. [2] | Harvest teams must treat current area status and reopening schedules as operating controls, not as background information. |
-| **Massachusetts winter option** | USDA has approved a Winter Removal Option in Barnstable and Plymouth counties for the 2027 crop year. [3] | Eligible container growers who move oysters into storage for severe cold can lower their Shellfish crop-insurance cost. |
-| **Larval feeding mechanism** | WHOI researchers show that shell density enables gravity-driven feeding currents in eastern oyster larvae. [4] | The work sharpens the link between shell formation, acidification risk and early-life survival. |
+| **Mississippi season order** | MDMR set a 1 October public-season opening for four named conditionally approved areas. [1] | Treat the order as an area-specific operating document, including its Sunday and holiday closures. |
+| **Massachusetts storm closure** | A precautionary state-wide shellfishing closure began at sunset on 25 September ahead of the nor’easter, until further notice. [2] | Harvest, wet-storage and customer commitments should be checked against the latest official status rather than the prior schedule. |
+| **Virginia mortality protocol** | VIMS guidance recommends documenting loss estimates by size class and area, with at least 20 units or 2% sampled per stratum. [3] | A defensible count can support farm decisions and later insurance or assistance discussions, subject to insurer requirements. |
+| **New Jersey law reform** | The Assembly passed A4994 to clarify that aquaculture includes land-based facilities alongside marine farms. [4] | The measure is a legislative step toward recognising the full hatchery-to-farm production chain; it is not final enactment. |
 
 ## Industry News
 
-### Mississippi reefs show a stronger pre-season survey signal
+### Mississippi posts its 2026–27 public-oyster season order
 
-At Mississippi’s 8 September oyster-season stakeholder meeting, the Department of Marine Resources estimated that surveyed reefs in the Mississippi Sound held just under 400,000 sacks of oysters, up from about 275,000 sacks the previous year. The state’s 2026–27 season is scheduled to open on 1 October, nearly two weeks earlier than the prior 13 October opening. [1]
+The Mississippi Department of Marine Resources has ordered the 2026–27 public-oyster season to open at legal sunrise on 1 October in Area I B, Area II B, Area II E and Area V A conditionally approved waters, provided the areas meet the conditions stated in the order. The order also closes Mississippi waters and public or private reef areas on Sundays and during specified Thanksgiving, Christmas and New Year periods. [1]
 
-The update is a useful Gulf production indicator, but it should be read carefully. A survey total signals broader reef condition and management readiness; it is not a substitute for area-specific access, quota, weather and market checks before a crew commits harvest effort.
+For crews and dealers, the practical point is to plan against the original area-specific order. A season opening is not a blanket access signal: approval status, handling controls, weather and the scheduled closures remain part of the operating decision.
 
 ## Regulations & Compliance
 
-### Rhode Island issues emergency shellfish closures after heavy rain
+### Massachusetts posts precautionary state-wide shellfishing closure
 
-Rhode Island DEM updated its shellfishing alert on 14 September after 3–6 inches of rain across central and eastern parts of the state. Emergency closures began at noon in Upper Bay Area B, Growing Area 3 (East Middle Bay) and Growing Area 9 (West Middle Bay). The agency lists sunrise reopenings of 24 September for Upper Bay Area B and 21 September for Growing Areas 3 and 9, subject to the current official status. [2]
+The Town of Falmouth’s shellfish page reports that, following notice from the Massachusetts Division of Marine Fisheries, a precautionary state-wide shellfishing closure became effective at sunset on Friday 25 September ahead of the weekend nor’easter and remains in place until further notice. The town directs permit holders to its current maps and notices for live area status. [2]
 
-For harvesters and buyers, the immediate task is traceability discipline. Check the current closure status before harvest and loading, retain lot records, and use the state’s designated shellfish-status channel rather than relying on prior-day information.
+This is an immediate control issue rather than a seasonal outlook. Harvesters, dealers and buyers should check the latest official closure information before harvest, loading or dispatch, maintain lot-level traceability and update customer commitments where product availability is affected.
 
-## Farm Management
+### New Jersey Assembly advances broader aquaculture definition
 
-### USDA adds a winter-storage insurance option in two Massachusetts counties
+New Jersey Assembly sources report passage of A4994, a bill intended to expand the state definition of aquaculture to include land-based facilities alongside marine farms. Legislative communications describe the change as covering the infrastructure needed across the production chain, including facilities such as hatcheries. [4]
 
-USDA’s Risk Management Agency has approved a Winter Removal Option through the Shellfish crop-insurance programme for container-grown, fresh half-shell oyster production in Barnstable and Plymouth counties. Beginning with the 2027 crop year, eligible producers may reduce their insurance cost if they remove oysters from the water and place them in storage to protect against severe cold. [3]
+The measure should be read as a policy-development signal, not as a final regulatory outcome. Shellfish businesses with hatchery, nursery or other land-based infrastructure should follow the bill’s further progress and consider how existing zoning, permitting and investment plans could be affected if it becomes law.
 
-This is a site-specific risk-management tool rather than a universal product. Massachusetts operators considering cover should compare their actual winter handling plan, storage capacity and loss exposure with the policy conditions, then contact a crop-insurance agent before the 30 November sales-closing date. [3]
+### Florida continues consultation on Big Bend harvest rules
+
+Florida Fish and Wildlife Conservation Commission workshop feedback has covered potential changes to the season, daily bag limits and licence requirements across the Big Bend region. The agency said it is still gathering stakeholder feedback and expects to develop recommendations based on resource conditions, with an aim of implementing uniform regional changes by 2027. [5]
+
+The near-term action is engagement, not compliance with a new rule. Operators should retain local observations on access, harvest effort and practical effects of the options so that input to the remaining process is specific and evidence-led.
 
 ## Science & Innovation
 
-### WHOI study links oyster-larval feeding to shell density and gravity
+### Alaska Sea Grant releases a revised oyster-growers manual
 
-A study led by Woods Hole Oceanographic Institution senior scientist Houshuo Jiang used high-speed microscale imaging and micro-particle image velocimetry to examine free-swimming eastern oyster larvae. The study finds that dense calcium-carbonate shells make the larvae heavier than seawater, allowing gravity to drive the feeding currents that bring food to the mouth. [4]
+Alaska Sea Grant has released *The New Alaska Oyster Growers Manual*, a 158-page illustrated update available as a free PDF and, for a limited period, as a free print publication. It covers the farming process from site selection through post-harvest processing and includes business-planning material, fee lists and hazard-planning worksheets. [6]
 
-The result provides a mechanistic lens for hatchery and climate-risk discussions. WHOI notes that ocean acidification can make shell formation more difficult; if shell density is altered enough, the gravity-driven current on which larvae depend could weaken at a vulnerable stage. [4]
+The release is useful beyond Alaska because it brings production, business and risk-planning material into one operational reference. It is not a substitute for local regulatory requirements, but it is a practical resource for reviewing internal procedures and training plans.
 
-### Ximing Guo receives 2026 Edison Patent Award for oyster crossbreeding
+## Farm Management
 
-Rutgers Distinguished Professor Ximing Guo has received the 2026 Edison Patent Award in Aquaculture from the Research & Development Council of New Jersey for *Molluscan Shellfish Produced by Controlled Crossbreeding* (U.S. Patent No. 11,266,131). Rutgers reports that the work has produced oyster varieties for Mid-Atlantic and Northeast aquaculture with improved disease resistance, growth and genetic diversity. [5]
+### Virginia Extension provides a defensible loss-estimation method
 
-For growers, the award is a reminder that genetic improvement is most useful when it is evaluated against local performance records. Seed choice, husbandry conditions, biosecurity and market specifications all determine whether laboratory advances translate into operational value.
+Virginia Tech’s Virginia Seafood Agricultural Research and Extension Center says a harmful algal bloom has affected portions of Chesapeake Bay and Eastern Shore waters, with negative impacts for aquaculture. A 28 September update from VIMS researchers advises growers to estimate mortality by size class and farm area, sample at least 20 units or 2% of the total for each stratum, and expand sampling when mortality varies markedly between units. [3]
+
+The guidance is designed to make a farm’s loss estimate more scientifically defensible. Document pre-event inventory, sampling selection, live and freshly dead counts, locations and images, and check with an insurer or adjuster before disposing of affected stock where cover may apply. [3]
 
 ## Community & Collaboration
 
-### Marblehead upweller network moves young oysters toward Ipswich reef restoration
+### Baltimore terminal joins Chesapeake Bay oyster gardening
 
-Sustainable Marblehead, Salem Sound Coastwatch and the Massachusetts Oyster Project are operating an upweller outside Marblehead’s Harbormaster’s Office with about 25,000 baby oysters. Volunteers undertake daily cleaning, pump checks and water-quality observations; organisers expect many of the oysters to move to an Ipswich restoration reef later this month. [6]
+AMPORTS began participating in the Chesapeake Bay Foundation’s Oyster Gardening Program at its Baltimore Atlantic Terminal this month. Members of the terminal safety team will maintain and monitor spat cages monthly through May 2027; CBF will then collect mature oysters for designated restoration sites in the Patapsco River. [7]
 
-The programme is explicitly restoration-focused, not a harvest project. Its practical value lies in the visible link between local stewardship, nursery care and a larger network of upwellers that gives young oysters a protected start before reef placement.
+The partnership illustrates a practical pathway for waterfront businesses to support restoration: regular husbandry and monitoring are tied to a defined transfer route into a larger restoration programme, rather than presented as a stand-alone symbolic activity.
 
 ## Ecosystem Services
 
-### NOAA habitat awards include Gulf marsh projects relevant to oysters
+### Billion Oyster Project channels its annual event into harbour restoration
 
-NOAA Fisheries has selected 16 habitat-restoration projects totalling US$103 million. The University of Georgia will receive US$8 million for salt-marsh restoration that supports shrimp, oysters and redfish, while Ducks Unlimited will receive US$9.9 million for marsh restoration in the Galveston Bay watershed targeting habitat used by those species. [7]
+Billion Oyster Project’s 24 September event in Brooklyn raised support for its work to restore New York Harbor’s ecosystem and educate future restoration practitioners. The organisation states that every dollar raised supports restoration, community engagement and education activities. [8]
 
-These are habitat investments, not direct payments to farms. Even so, the awards are relevant to oyster-dependent coastal systems because nursery habitat, marsh connectivity and water quality are part of the wider ecological infrastructure that sustains fisheries and restoration outcomes.
+The point for the sector is not the event itself but the funding model. Public-facing oyster activity can be structured around a specific restoration and learning mission, linking outreach with durable reef and workforce outcomes rather than only short-term promotion.
 
 ## Industry Calendar
 
 | Date | Event | Location |
 |---|---|---|
-| **September 22, 2026** | VMRC public hearing: proposed shellfish-tagging amendments | Fort Monroe, Virginia |
-| **October 1, 2026** | NRCS public-comment deadline: National Handbook of Conservation Practices revisions | Online |
+| **October 1, 2026** | Mississippi 2026–27 public-oyster season opens at legal sunrise in the named areas | Mississippi Sound, Mississippi |
 | **October 3, 2026** | 6th Annual Give a Shuck | Boston, Massachusetts |
+| **October 17, 2026** | 2026 New Jersey Oyster Festival | Port Norris, New Jersey |
 | **October 17–18, 2026** | 60th U.S. Oyster Festival | Leonardtown, Maryland |
 
 ## Employment Board
 
 | Role | Employer | Location | Application route |
 |---|---|---|---|
-| **Assistant Hatchery Manager** | Downeast Institute | Beals, Maine | Direct job posting [8] |
-| **Shellfish Production Technician** | Downeast Institute | Beals, Maine | Direct job posting [9] |
+| **Environmental/Natural Resources Specialist II — Shellfish Bureau** | Mississippi Department of Marine Resources | Harrison County, Mississippi | Direct State of Mississippi posting [9] |
 
 ## Who’s in the News
 
-### Ximing Guo — New Jersey
+### Rachel French — Alaska
 
-**2026 Edison Patent Award, Aquaculture.** Rutgers recognised Ximing Guo, Distinguished Professor in the Department of Marine and Coastal Sciences, for his controlled-crossbreeding patent and contribution to aquaculture oyster varieties. [5]
+**Lead author, *The New Alaska Oyster Growers Manual*.** Alaska Sea Grant identifies Rachel French, a State Fellow, as the primary author of the revised manual for prospective and active oyster growers. [6]
 
-The recognition matters because it connects long-term breeding research with the practical traits growers routinely weigh: disease resilience, growth, uniformity and genetic diversity. The award does not replace local trials, but it makes the breeding pathway and its commercial relevance more visible.
+French and the contributing team focused on a readable, accessible update with chapters designed to stand alone, allowing growers to use the material most relevant to their immediate operations. The work makes a broad production and planning resource more usable at farm level.
 
 ## Quote of the Week
 
-> “This tells us that the shell is doing more than just protecting the animal. It is actually helping the larva feed. That means anything that changes the shell could also change how the larva gets its food.” — Houshuo Jiang, Woods Hole Oceanographic Institution [4]
+> “We cannot yet speak to what the updated oyster harvest regulations will look like, as we are still gathering feedback from stakeholders in the region and will be developing our recommendations based on the state of the resource using their input.” — Pebbles Causseaux, Florida Fish and Wildlife Conservation Commission Division of Marine Fisheries Management [5]
 
 ## References
 
-[1]: https://www.wlox.com/2026/09/15/mississippi-oyster-industry-rebuilds-reefs-show-signs-growth/ "Mississippi oyster industry rebuilds as reefs show signs of growth — WLOX"
-[2]: https://dem.ri.gov/environmental-protection-bureau/water-resources/research-monitoring/shellfish-area-monitoring "Shellfishing — Rhode Island Department of Environmental Management"
-[3]: https://www.rma.usda.gov/news-events/news/2026/raleigh-north-carolina/usda-adds-risk-management-flexibility-oyster-producers "USDA Adds Risk Management Flexibility for Oyster Producers in Two Massachusetts Counties — USDA Risk Management Agency"
-[4]: https://www.whoi.edu/press-room/news-release/oyster-gravity/ "Tiny oyster larvae rely on gravity to feed — Woods Hole Oceanographic Institution"
-[5]: https://sebsnjaesnews.rutgers.edu/2026/09/shellfish-geneticist-ximing-guo-among-two-rutgers-research-teams-to-receive-2026-edison-patent-awards/ "Shellfish Geneticist Ximing Guo Among Two Rutgers Research Teams to Receive 2026 Edison Patent Awards — Rutgers"
-[6]: https://marbleheadcurrent.org/2026/09/14/from-tiny-oysters-big-hopes-for-healthier-waters/ "From tiny oysters, big hopes for healthier waters — Marblehead Current"
-[7]: https://www.nationalfisherman.com/more-than-100-million-in-habitat-funding-targets-key-us-fisheries "More than US$100 million in habitat funding targets key US fisheries — National Fisherman"
-[8]: https://downeastinstitute.org/wp-content/uploads/2026/08/assistant_hatchery_manager_job_posting_8-25-26.pdf "Assistant Hatchery Manager — Downeast Institute"
-[9]: https://downeastinstitute.org/wp-content/uploads/2026/08/shellfish_production_technician_job_posting_8-25-26.pdf "Shellfish Production Technician — Downeast Institute"
+[1]: https://dmr.ms.gov/order-opening-the-2026-2027-oyster-season/ "Order Opening the 2026–2027 Oyster Season — Mississippi Department of Marine Resources"
+[2]: https://www.falmouthma.gov/1098/Open-Shellfishing-Areas "Open Shellfishing Areas — Town of Falmouth, Massachusetts"
+[3]: https://www.arec.vaes.vt.edu/arec/virginia-seafood/programs_research/aquaculture/hab-resources.html "Northampton Shellfish Mortality Response — Virginia Tech"
+[4]: https://www.njassemblygop.com/m/newsflash/Home/Detail/1067 "Assembly Passes Sauickie Bill Supporting New Jersey Seafood Farmers — New Jersey Assembly"
+[5]: https://www.wusf.org/environment/2026-09-26/changes-big-bend-oyster-harvest-could-be-coming "Changes could be coming to the Big Bend oyster harvest — WUSF"
+[6]: https://alaskaseagrant.org/2026/09/revised-oyster-manual-hits-the-shelves/ "Revised oyster manual hits the shelves — Alaska Sea Grant"
+[7]: https://www.amports.com/2026/09/23/amports-joins-chesapeake-bay-foundation-oyster-restoration-effort-at-baltimore-atlantic-terminal/ "AMPORTS joins Chesapeake Bay Foundation oyster restoration effort — AMPORTS"
+[8]: https://www.billionoysterproject.org/upcoming/date/billion-oyster-party-2026-09-24 "Billion Oyster Party 2026 — Billion Oyster Project"
+[9]: https://www.governmentjobs.com/careers/mississippi/jobs/newprint/5315622 "Environmental/Natural Resources Specialist II — State of Mississippi"
 `,
   briefing: [
-    "The immediate operating signals are split between recovery and restriction. Mississippi’s surveyed reef estimate is higher than last year ahead of a 1 October opening, while Rhode Island has emergency rain closures in named areas. Use the first as a cautious production indicator and the second as a current harvest-control issue.",
-    "The longer-term message is resilience through operations and evidence. Eligible Massachusetts growers have a new winter-storage insurance option, WHOI has clarified a larval feeding mechanism that may be sensitive to shell-formation stress, and NOAA’s latest habitat awards direct resources to Gulf marsh systems relevant to oysters."
+    "The immediate signals are split between a scheduled opening and active disruption. Mississippi’s public season opens 1 October in specified conditionally approved areas, while Massachusetts’ precautionary state-wide closure requires day-of-operation status checks. In Virginia, the current bloom response has shifted from general alert to a documented loss-estimation method.",
+    "The longer-term signal is operational infrastructure. New Jersey has taken an Assembly step toward recognising land-based aquaculture facilities, Alaska Sea Grant has refreshed its practical manual, and oyster-gardening programmes in Baltimore and New York are directing partner and public participation toward restoration outcomes."
   ],
   metrics: [
-    { label: "Mississippi surveyed reefs", value: "<400k sacks", tone: "green" },
-    { label: "RI emergency closures", value: "3 areas", tone: "red" },
-    { label: "Mass. enrolment closes", value: "Nov 30", tone: "neutral" },
-    { label: "NOAA habitat awards", value: "US$103M", tone: "green" }
+    { label: "Mississippi public opening", value: "1 Oct", tone: "green" },
+    { label: "Mass. closure", value: "State-wide", tone: "red" },
+    { label: "VIMS baseline sample", value: "20 units / 2%", tone: "neutral" },
+    { label: "NJ aquaculture bill", value: "A4994 passed", tone: "green" }
   ],
-  topSignals: ["Mississippi reef survey", "Rhode Island rain closures", "Massachusetts winter insurance", "Oyster-larval feeding science"],
+  topSignals: ["Mississippi season order", "Massachusetts precautionary closure", "Virginia loss-estimation guidance", "New Jersey aquaculture definition"],
   quote: {
-    text: "This tells us that the shell is doing more than just protecting the animal. It is actually helping the larva feed. That means anything that changes the shell could also change how the larva gets its food.",
-    speaker: "Houshuo Jiang",
-    author: "Houshuo Jiang",
-    role: "Senior Scientist, Woods Hole Oceanographic Institution",
-    context: "On research showing that oyster larvae use gravity-driven feeding currents enabled by their dense shells."
+    text: "We cannot yet speak to what the updated oyster harvest regulations will look like, as we are still gathering feedback from stakeholders in the region and will be developing our recommendations based on the state of the resource using their input.",
+    speaker: "Pebbles Causseaux",
+    author: "Pebbles Causseaux",
+    role: "Communications Coordinator, FWC Division of Marine Fisheries Management",
+    context: "On Florida’s continuing Big Bend oyster-harvest rule consultation."
   },
   spotlight: {
-    name: "Ximing Guo",
-    location: "New Jersey",
-    award: "2026 Edison Patent Award — Aquaculture",
-    body: "Rutgers Distinguished Professor Ximing Guo received the 2026 Edison Patent Award in Aquaculture for his controlled-crossbreeding work in molluscan shellfish.",
-    body2: "Rutgers reports that the work has generated oyster varieties for Mid-Atlantic and Northeast growers with improved disease resistance, growth and genetic diversity."
+    name: "Rachel French",
+    location: "Alaska",
+    award: "Lead author, The New Alaska Oyster Growers Manual",
+    body: "Alaska Sea Grant identifies State Fellow Rachel French as the primary author of its revised oyster-growers manual for prospective and active farmers.",
+    body2: "The 158-page update brings site selection, production, post-harvest processing, business planning and hazard-planning resources into an accessible operational reference."
   }
 };
 
 export const newsItems: NewsItem[] = [
   {
-    id: "mississippi-oyster-reef-survey-season-2026",
-    title: "Mississippi reef survey rises ahead of 1 October season opening",
+    id: "mississippi-public-oyster-season-order-2026",
+    title: "Mississippi sets 1 October public-oyster season opening",
     category: "Industry",
     region: "Gulf",
-    summary: "Mississippi Department of Marine Resources estimated just under 400,000 sacks of oysters across surveyed Mississippi Sound reefs, compared with about 275,000 sacks last year; the 2026–27 season is scheduled to open 1 October.",
-    whyItMatters: "The higher survey estimate is a positive operating signal, but crews still need area-specific access, quota, weather and market checks before scheduling harvest effort.",
-    sourceName: "WLOX / Roy Howard Community Journalism Center",
-    sourceUrl: "https://www.wlox.com/2026/09/15/mississippi-oyster-industry-rebuilds-reefs-show-signs-growth/"
+    summary: "Mississippi Department of Marine Resources has ordered the 2026–27 public-oyster season to open at legal sunrise on 1 October in Area I B, Area II B, Area II E and Area V A conditionally approved waters, subject to the order’s conditions.",
+    whyItMatters: "The opening is an area-specific operating signal, not blanket access. Harvest plans should incorporate approval status, handling controls and the order’s Sunday and holiday closures.",
+    sourceName: "Mississippi Department of Marine Resources",
+    sourceUrl: "https://dmr.ms.gov/order-opening-the-2026-2027-oyster-season/"
   },
   {
-    id: "rhode-island-september-2026-rain-closures",
-    title: "Rhode Island posts emergency shellfish closures after heavy rain",
+    id: "massachusetts-precautionary-statewide-shellfishing-closure",
+    title: "Massachusetts posts precautionary state-wide shellfishing closure",
     category: "Regulation",
     region: "Northeast",
-    summary: "Rhode Island DEM lists emergency closures from noon on 14 September for Upper Bay Area B, East Middle Bay and West Middle Bay after heavy rain, with scheduled reopening dates subject to current official status.",
-    whyItMatters: "Treat the current area status as an immediate harvest and traceability control. Check the official closure channel before harvest or loading rather than using prior-day information.",
+    summary: "Following notice from Massachusetts Division of Marine Fisheries, a precautionary state-wide shellfishing closure began at sunset on 25 September ahead of the weekend nor’easter and remains in effect until further notice.",
+    whyItMatters: "This is a current harvest, wet-storage and supply-commitment control. Check the latest official status before harvest, loading or dispatch, and retain lot-level traceability.",
     urgent: true,
-    sourceName: "Rhode Island Department of Environmental Management",
-    sourceUrl: "https://dem.ri.gov/environmental-protection-bureau/water-resources/research-monitoring/shellfish-area-monitoring"
+    sourceName: "Town of Falmouth / Massachusetts Division of Marine Fisheries notice",
+    sourceUrl: "https://www.falmouthma.gov/1098/Open-Shellfishing-Areas"
   },
   {
-    id: "usda-winter-removal-option-massachusetts",
-    title: "USDA adds winter-storage insurance flexibility in Massachusetts",
+    id: "virginia-hab-shellfish-mortality-estimation-guidance",
+    title: "Virginia issues defensible mortality-estimation guidance",
     category: "Farm",
-    region: "Northeast",
-    summary: "For the 2027 crop year, container-grown oyster producers in Barnstable and Plymouth counties can add USDA’s Winter Removal Option to Shellfish crop insurance when oysters are moved into storage for severe cold.",
-    whyItMatters: "The option may reduce insurance cost for eligible growers, but it is specific to two counties and should be evaluated against actual winter handling, storage capacity and cover conditions before the 30 November enrolment deadline.",
-    sourceName: "USDA Risk Management Agency",
-    sourceUrl: "https://www.rma.usda.gov/news-events/news/2026/raleigh-north-carolina/usda-adds-risk-management-flexibility-oyster-producers"
-  },
-  {
-    id: "whoi-oyster-larvae-gravity-feeding",
-    title: "WHOI reveals gravity-driven feeding in oyster larvae",
-    category: "Science",
-    region: "Northeast",
-    summary: "WHOI research finds that eastern oyster larvae rely on dense calcium-carbonate shells to create gravity-driven feeding currents, observed using high-speed microscale imaging and particle-tracking methods.",
-    whyItMatters: "The result creates a clearer pathway from shell-formation stress to feeding performance, helping hatchery and climate-risk discussions focus on the larval stage as well as adult stock.",
-    sourceName: "Woods Hole Oceanographic Institution",
-    sourceUrl: "https://www.whoi.edu/press-room/news-release/oyster-gravity/"
-  },
-  {
-    id: "ximing-guo-edison-patent-award-2026",
-    title: "Rutgers shellfish geneticist Ximing Guo wins Edison Patent Award",
-    category: "Science",
     region: "Mid-Atlantic",
-    summary: "Rutgers reports that Ximing Guo has received the 2026 Edison Patent Award in Aquaculture for controlled-crossbreeding work that has produced oyster varieties with improved disease resistance, growth and genetic diversity.",
-    whyItMatters: "Breeding gains are most useful when paired with local performance records. The award is a strong signal of research translation, not a substitute for site-specific seed trials and biosecurity practice.",
-    sourceName: "Rutgers School of Environmental and Biological Sciences",
-    sourceUrl: "https://sebsnjaesnews.rutgers.edu/2026/09/shellfish-geneticist-ximing-guo-among-two-rutgers-research-teams-to-receive-2026-edison-patent-awards/"
+    summary: "Virginia Tech and VIMS advise shellfish growers responding to the current bloom impacts to estimate losses by size class and farm area, beginning with at least 20 units or 2% per size class and area, then increasing samples where variability is high.",
+    whyItMatters: "Well-documented, randomised counts can turn a sudden loss event into a defensible estimate for farm decision-making and potential insurance or assistance discussions; check insurer requirements first.",
+    urgent: true,
+    sourceName: "Virginia Tech / Virginia Cooperative Extension",
+    sourceUrl: "https://www.arec.vaes.vt.edu/arec/virginia-seafood/programs_research/aquaculture/hab-resources.html"
   },
   {
-    id: "marblehead-upweller-ipswich-reef-restoration",
-    title: "Marblehead upweller supports the next stage of Ipswich reef restoration",
+    id: "new-jersey-a4994-aquaculture-definition-assembly",
+    title: "New Jersey Assembly advances land-based aquaculture definition",
+    category: "Regulation",
+    region: "Mid-Atlantic",
+    summary: "New Jersey Assembly sources report passage of A4994, a bill intended to clarify that the state definition of aquaculture includes land-based facilities alongside marine farms, including the infrastructure that supports shellfish production.",
+    whyItMatters: "The measure is a policy-development signal for hatcheries, nurseries and integrated operations, not a final change in law. Businesses should track its next legislative steps before altering permits or investment plans.",
+    sourceName: "New Jersey Legislative Assembly",
+    sourceUrl: "https://www.njassemblygop.com/m/newsflash/Home/Detail/1067"
+  },
+  {
+    id: "florida-big-bend-oyster-harvest-consultation-2026",
+    title: "Florida continues consultation on Big Bend harvest rules",
+    category: "Regulation",
+    region: "Southeast",
+    summary: "Feedback at Florida’s third oyster-regulation workshop covered possible changes to seasons, daily bag limits and licence requirements. The agency says it is still gathering input before developing recommendations, with uniform regional changes targeted for 2027.",
+    whyItMatters: "No new rule has been adopted. Farmers and harvesters have an opportunity to convert local experience on access, effort and resource conditions into specific, evidence-led consultation input.",
+    sourceName: "WUSF Public Media",
+    sourceUrl: "https://www.wusf.org/environment/2026-09-26/changes-big-bend-oyster-harvest-could-be-coming"
+  },
+  {
+    id: "alaska-sea-grant-revised-oyster-growers-manual",
+    title: "Alaska Sea Grant publishes revised oyster-growers manual",
+    category: "Science",
+    region: "Alaska",
+    summary: "The 158-page illustrated New Alaska Oyster Growers Manual is now available as a free PDF and, for a limited time, in print. It spans site selection, production, post-harvest processing, business planning and hazard-planning resources.",
+    whyItMatters: "The manual provides a consolidated training and systems-review resource for prospective and active growers. Local rules still prevail, but the workflow guidance is useful when reviewing procedures and onboarding teams.",
+    sourceName: "Alaska Sea Grant",
+    sourceUrl: "https://alaskaseagrant.org/2026/09/revised-oyster-manual-hits-the-shelves/"
+  },
+  {
+    id: "amports-cbf-baltimore-oyster-gardening-2026",
+    title: "Baltimore terminal joins Chesapeake Bay oyster gardening",
     category: "Community",
-    region: "Northeast",
-    summary: "A Marblehead upweller managed by Sustainable Marblehead, Salem Sound Coastwatch and the Massachusetts Oyster Project is holding about 25,000 baby oysters before many are moved to an Ipswich restoration reef.",
-    whyItMatters: "The programme demonstrates the value of local volunteer operations—daily cleaning, equipment checks and water-quality observation—in connecting nursery care to a broader reef-restoration network.",
-    sourceName: "Marblehead Current",
-    sourceUrl: "https://marbleheadcurrent.org/2026/09/14/from-tiny-oysters-big-hopes-for-healthier-waters/"
+    region: "Mid-Atlantic",
+    summary: "AMPORTS has started participating in Chesapeake Bay Foundation’s Oyster Gardening Program at its Baltimore Atlantic Terminal. Terminal staff will maintain and monitor spat cages monthly through May 2027 before mature oysters are moved to Patapsco River restoration sites.",
+    whyItMatters: "The partnership connects regular husbandry by a waterfront employer with a defined pathway into restoration, offering a practical model for place-based corporate and community participation.",
+    sourceName: "AMPORTS",
+    sourceUrl: "https://www.amports.com/2026/09/23/amports-joins-chesapeake-bay-foundation-oyster-restoration-effort-at-baltimore-atlantic-terminal/"
   },
   {
-    id: "noaa-habitat-funding-gulf-marsh-oysters",
-    title: "NOAA habitat awards target Gulf marshes relevant to oysters",
+    id: "billion-oyster-project-party-restoration-support-2026",
+    title: "Billion Oyster Project directs event support to harbour restoration",
     category: "Ecosystem",
-    region: "Gulf",
-    summary: "NOAA Fisheries selected 16 habitat-restoration projects totalling US$103 million, including US$8 million for University of Georgia salt-marsh restoration and US$9.9 million for Ducks Unlimited marsh work in the Galveston Bay watershed.",
-    whyItMatters: "These are ecosystem investments rather than direct farm payments, but marsh condition and connectivity are important parts of the wider ecological infrastructure that supports oyster-dependent coastal systems.",
-    sourceName: "National Fisherman",
-    sourceUrl: "https://www.nationalfisherman.com/more-than-100-million-in-habitat-funding-targets-key-us-fisheries"
+    region: "Northeast",
+    summary: "Billion Oyster Project says proceeds from its 24 September Brooklyn event support restoration, community engagement and education in its work to restore New York Harbor’s ecosystem.",
+    whyItMatters: "The model links public-facing oyster activity to a specified restoration and learning mission, helping move engagement beyond promotion toward durable reef and workforce outcomes.",
+    sourceName: "Billion Oyster Project",
+    sourceUrl: "https://www.billionoysterproject.org/upcoming/date/billion-oyster-party-2026-09-24"
   }
 ];
 
 export const calendarEvents: CalendarEvent[] = [
   {
-    id: "vmrc-shellfish-tagging-hearing-2026",
-    title: "VMRC public hearing: proposed shellfish-tagging amendments",
-    isoDate: "2026-09-22T09:00:00-04:00",
-    dateLabel: "September 22, 2026",
-    location: "Fort Monroe, Virginia",
-    note: "Public hearing on the proposed change to the identification of harvested shellfish, intended to align with National Shellfish Sanitation Program tagging requirements.",
-    url: "https://www.mrc.virginia.gov/Notices/2026/FM_PN_09-22-2026.shtm"
-  },
-  {
-    id: "nrcs-conservation-practices-comments-2026",
-    title: "NRCS comment deadline: conservation-practice standards",
-    isoDate: "2026-10-01T23:59:00-04:00",
-    dateLabel: "October 1, 2026",
-    location: "Online",
-    note: "Comments close on National Handbook of Conservation Practices revisions that identify Bivalve Aquaculture Gear and Biofouling Control (Code 400) among relevant practices.",
-    url: "https://www.federalregister.gov/documents/2026/09/01/2026-17863/proposed-revisions-to-the-national-handbook-of-conservation-practices"
+    id: "mississippi-public-oyster-opening-2026",
+    title: "Mississippi public-oyster season opening",
+    isoDate: "2026-10-01T06:30:00-05:00",
+    dateLabel: "October 1, 2026 · legal sunrise",
+    location: "Mississippi Sound, Mississippi",
+    note: "MDMR’s 2026–27 public-oyster season opens in the named conditionally approved areas, subject to the order’s requirements and closures.",
+    url: "https://dmr.ms.gov/order-opening-the-2026-2027-oyster-season/"
   },
   {
     id: "mass-oyster-project-give-a-shuck-2026",
@@ -281,8 +288,17 @@ export const calendarEvents: CalendarEvent[] = [
     isoDate: "2026-10-03T14:00:00-04:00",
     dateLabel: "October 3, 2026 · 2–5 pm EDT",
     location: "Boston, Massachusetts",
-    note: "Massachusetts Oyster Project’s annual oyster-focused fundraiser connecting local growers, chefs and coastal-resilience supporters.",
+    note: "Massachusetts Oyster Project fundraiser with local oyster farmers, chefs and live music, supporting coastal-strengthening work.",
     url: "https://www.massoyster.org/get-involved/events"
+  },
+  {
+    id: "new-jersey-oyster-festival-2026",
+    title: "2026 New Jersey Oyster Festival",
+    isoDate: "2026-10-17T12:00:00-04:00",
+    dateLabel: "October 17, 2026 · noon–5 pm EDT",
+    location: "Port Norris, New Jersey",
+    note: "Bayshore Center at Bivalve’s annual event celebrates New Jersey’s oyster heritage on the Delaware Bay waterfront.",
+    url: "https://www.bayshorecenter.org/upcoming-event/2026-new-jersey-oyster-festival/"
   },
   {
     id: "us-oyster-festival-2026",
@@ -290,30 +306,20 @@ export const calendarEvents: CalendarEvent[] = [
     isoDate: "2026-10-17T10:00:00-04:00",
     dateLabel: "October 17–18, 2026",
     location: "Leonardtown, Maryland",
-    note: "The 60th annual festival includes the U.S. National Oyster Shucking Championship and community fundraising for local causes.",
-    url: "https://thebaynet.com/60-years-of-shucking-for-a-cause-u-s-oyster-festival-gives-back-across-st-marys/"
+    note: "Hosted by the Rotary Club of Lexington Park, the festival includes the U.S. National Oyster Shucking Championship.",
+    url: "https://www.usoysterfestival.org/"
   }
 ];
 
 export const jobs: JobPost[] = [
   {
-    id: "downeast-assistant-hatchery-manager-2026",
-    role: "Assistant Hatchery Manager",
-    employer: "Downeast Institute",
-    location: "Beals, Maine",
-    compensation: "US$25/hour starting rate",
-    deadline: "See posting",
-    applyUrl: "https://downeastinstitute.org/wp-content/uploads/2026/08/assistant_hatchery_manager_job_posting_8-25-26.pdf",
-    summary: "Full-time, year-round hatchery leadership role spanning commercial and research-scale shellfish production, operations, staff supervision and production-record maintenance."
-  },
-  {
-    id: "downeast-shellfish-production-technician-2026",
-    role: "Shellfish Production Technician",
-    employer: "Downeast Institute",
-    location: "Beals, Maine",
-    compensation: "US$20/hour",
-    deadline: "See posting",
-    applyUrl: "https://downeastinstitute.org/wp-content/uploads/2026/08/shellfish_production_technician_job_posting_8-25-26.pdf",
-    summary: "Hands-on position spanning broodstock conditioning, spawning, larval rearing, nursery production, grow-out, commercial seed delivery, field operations and production records."
+    id: "mississippi-shellfish-bureau-specialist-2026",
+    role: "Environmental/Natural Resources Specialist II — Shellfish Bureau",
+    employer: "Mississippi Department of Marine Resources",
+    location: "Harrison County, Mississippi",
+    compensation: "US$40,286.40–44,315.04/year",
+    deadline: "Closes Sep 30 · 11:59 pm CT",
+    applyUrl: "https://www.governmentjobs.com/careers/mississippi/jobs/newprint/5315622",
+    summary: "Full-time, time-limited scientific role covering on- and off-bottom oyster-aquaculture techniques, shellfish harvest and handling procedures, and Shellfish Resource Management and Oyster Aquaculture programs."
   }
 ];
