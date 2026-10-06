@@ -38,288 +38,270 @@ export type JobPost = {
 
 export const oceanfarmrLogo = "https://d2xsxph8kpxj0f.cloudfront.net/101845481/YdoSnj7mHMWmcidNEoA8jc/RGBLogo_Oceanfarmr_Inline_WhiteandGreen_a90a5b7e.webp";
 
-// Edition: September 29, 2026
+// Edition: October 6, 2026
 export const currentEdition = {
-  id: "2026-09-29",
-  date: "September 29, 2026",
-  shortDate: "Sep 29",
+  id: "2026-10-06",
+  date: "October 6, 2026",
+  shortDate: "Oct 6",
   title: "US Oyster — AI Edition",
-  headline: "Season opening, storm closure and a bloom-response playbook",
-  dek: "This week: Mississippi sets its opening order, Massachusetts posts a precautionary closure, Virginia releases loss-estimation guidance, and New Jersey advances aquaculture law reform.",
+  headline: "Closures, seed capacity and a Chesapeake oyster rebound",
+  dek: "This week: North Carolina sanitation controls tighten, Alaska adds hatchery capacity, Maryland reports sanctuary gains, and October opens a national seafood conversation.",
   heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/101845481/WDjqxWzBX95a3nkagP7cSW/us-oyster-hero-tidal-dashboard-KX8rMSR2KLBGPL35uirLBc.webp",
-  fullContent: `# US Oyster — AI Edition | September 29, 2026
+  fullContent: `# US Oyster — AI Edition | October 6, 2026
 **An Oceanfarmr USA Publication**
 
-This week’s operating picture combines a scheduled Gulf opening with active weather and bloom responses in the Northeast and Mid-Atlantic. Mississippi’s public-oyster season is set to open at legal sunrise on 1 October in four named conditionally approved areas. In Massachusetts, a precautionary state-wide shellfishing closure began before the weekend nor’easter and remains subject to official status updates. Virginia Extension and VIMS have also issued a practical protocol for documenting oyster losses after the harmful algal bloom affecting parts of Chesapeake Bay and Eastern Shore waters. [1] [2] [3]
+This week’s operating picture pairs immediate food-safety controls with longer-horizon capacity and restoration signals. North Carolina has imposed temporary shellfish closures across waters in five coastal counties, making live sanitation checks an immediate harvest control. In Alaska, a new floating mariculture laboratory is expected to provide workforce training and capacity for up to three million oyster seed annually. Maryland’s latest five-year oyster-management review points to continued sanctuary gains, while National Seafood Month provides a timely market and public-engagement platform for domestic farmed shellfish. [1] [2] [3] [4]
 
 ## TL;DR
 
 | Signal | What changed | Why it matters for growers |
 |---|---|---|
-| **Mississippi season order** | MDMR set a 1 October public-season opening for four named conditionally approved areas. [1] | Treat the order as an area-specific operating document, including its Sunday and holiday closures. |
-| **Massachusetts storm closure** | A precautionary state-wide shellfishing closure began at sunset on 25 September ahead of the nor’easter, until further notice. [2] | Harvest, wet-storage and customer commitments should be checked against the latest official status rather than the prior schedule. |
-| **Virginia mortality protocol** | VIMS guidance recommends documenting loss estimates by size class and area, with at least 20 units or 2% sampled per stratum. [3] | A defensible count can support farm decisions and later insurance or assistance discussions, subject to insurer requirements. |
-| **New Jersey law reform** | The Assembly passed A4994 to clarify that aquaculture includes land-based facilities alongside marine farms. [4] | The measure is a legislative step toward recognising the full hatchery-to-farm production chain; it is not final enactment. |
+| **North Carolina closures** | Temporary shellfish closures took effect on 4 October in named waters across five coastal counties. [1] | Treat the current proclamation and sanitation map as day-of-harvest controls; verify status before loading product. |
+| **Alaska seed capacity** | UAS Sitka acquired a floating mariculture lab with stated capacity for up to 3 million oyster seed each year. [2] | The facility adds regional hatchery, research and workforce infrastructure, although teaching use begins in early 2027. |
+| **Maryland sanctuary trend** | A five-year state review reports that nearly 40% of Maryland oyster sanctuaries have positive growth or meet scientific benchmarks. [3] | The outcome strengthens the management case for protected reefs alongside harvest areas and planned habitat investment. |
+| **National Seafood Month** | NOAA opened October’s national campaign around sustainable wild-caught and farmed seafood. [4] | Farms, dealers and associations have a defined month for origin, traceability and farmed-seafood communication. |
 
 ## Industry News
 
-### Mississippi posts its 2026–27 public-oyster season order
+### Regulatory complexity remains a growth constraint for North American aquaculture
 
-The Mississippi Department of Marine Resources has ordered the 2026–27 public-oyster season to open at legal sunrise on 1 October in Area I B, Area II B, Area II E and Area V A conditionally approved waters, provided the areas meet the conditions stated in the order. The order also closes Mississippi waters and public or private reef areas on Sundays and during specified Thanksgiving, Christmas and New Year periods. [1]
+Aquaculture North America reports that the 2026 *State of World Fisheries and Aquaculture* identifies North America as producing only 1% of global aquatic-animal aquaculture production, despite being the largest seafood importer. The article links this gap to multi-agency approvals and long permitting pathways, including the wide range of state and federal agencies that a California shellfish operation may need to navigate. [5]
 
-For crews and dealers, the practical point is to plan against the original area-specific order. A season opening is not a blanket access signal: approval status, handling controls, weather and the scheduled closures remain part of the operating decision.
+This is a strategic context signal rather than a new shellfish rule. For oyster businesses, the practical response is to maintain clear permitting records, map approvals by site and activity, and separate actual compliance requirements from broader policy debate.
 
 ## Regulations & Compliance
 
-### Massachusetts posts precautionary state-wide shellfishing closure
+### North Carolina imposes temporary shellfish closures in five coastal counties
 
-The Town of Falmouth’s shellfish page reports that, following notice from the Massachusetts Division of Marine Fisheries, a precautionary state-wide shellfishing closure became effective at sunset on Friday 25 September ahead of the weekend nor’easter and remains in place until further notice. The town directs permit holders to its current maps and notices for live area status. [2]
+North Carolina’s Division of Marine Fisheries lists temporary shellfish closures effective 4 October for named waters in Brunswick, New Hanover, Pender, Carteret and Pamlico counties. The notice includes areas such as Tubbs Inlet, Shallotte River and Inlet, Lockwoods Folly River and Inlet, parts of Myrtle Grove and Topsail sounds, Oyster Creek, Nelson Bay, South River, Bay River and Jones Bay. [1]
 
-This is an immediate control issue rather than a seasonal outlook. Harvesters, dealers and buyers should check the latest official closure information before harvest, loading or dispatch, maintain lot-level traceability and update customer commitments where product availability is affected.
+This is an urgent operational signal. Harvesters and dealers should verify the current proclamation and interactive sanitation map before harvest, preserve location and lot records, and update customer commitments if availability is affected.
 
-### New Jersey Assembly advances broader aquaculture definition
+### Oregon’s updated shellfish notice keeps commercial product distinction clear
 
-New Jersey Assembly sources report passage of A4994, a bill intended to expand the state definition of aquaculture to include land-based facilities alongside marine farms. Legislative communications describe the change as covering the infrastructure needed across the production chain, including facilities such as hatcheries. [4]
+Oregon Department of Agriculture’s shellfish status page was updated on 2 October. It reports a coast-wide recreational razor-clam closure for domoic acid while stating that commercial shellfish products remain safe for consumers. [6]
 
-The measure should be read as a policy-development signal, not as a final regulatory outcome. Shellfish businesses with hatchery, nursery or other land-based infrastructure should follow the bill’s further progress and consider how existing zoning, permitting and investment plans could be affected if it becomes law.
-
-### Florida continues consultation on Big Bend harvest rules
-
-Florida Fish and Wildlife Conservation Commission workshop feedback has covered potential changes to the season, daily bag limits and licence requirements across the Big Bend region. The agency said it is still gathering stakeholder feedback and expects to develop recommendations based on resource conditions, with an aim of implementing uniform regional changes by 2027. [5]
-
-The near-term action is engagement, not compliance with a new rule. Operators should retain local observations on access, harvest effort and practical effects of the options so that input to the remaining process is specific and evidence-led.
+The notice concerns Oregon’s recreational programme and does not establish an oyster-farm closure. It remains a useful communications reminder: describe the affected species, harvesting channel and geography precisely when discussing shellfish-safety news with customers.
 
 ## Science & Innovation
 
-### Alaska Sea Grant releases a revised oyster-growers manual
+### UAS Sitka expands mariculture training and oyster-seed capacity
 
-Alaska Sea Grant has released *The New Alaska Oyster Growers Manual*, a 158-page illustrated update available as a free PDF and, for a limited period, as a free print publication. It covers the farming process from site selection through post-harvest processing and includes business-planning material, fee lists and hazard-planning worksheets. [6]
+The University of Alaska Southeast’s Sitka campus has acquired a floating mariculture laboratory from OceansAlaska. The university states that the facility can produce seeded line for kelp growers and up to three million oyster seed annually, alongside seed for other shellfish species. It will support applied research, in-water skills development and public education, with coursework planned from early 2027. [2]
 
-The release is useful beyond Alaska because it brings production, business and risk-planning material into one operational reference. It is not a substitute for local regulatory requirements, but it is a practical resource for reviewing internal procedures and training plans.
+The value is not only physical capacity. Locating hatchery operations, student training and applied research in one platform creates a more direct pathway from marine-science education to regional production needs.
 
 ## Farm Management
 
-### Virginia Extension provides a defensible loss-estimation method
+### Maine introduces a new aquaculture-application portal through an operator information session
 
-Virginia Tech’s Virginia Seafood Agricultural Research and Extension Center says a harmful algal bloom has affected portions of Chesapeake Bay and Eastern Shore waters, with negative impacts for aquaculture. A 28 September update from VIMS researchers advises growers to estimate mortality by size class and farm area, sample at least 20 units or 2% of the total for each stratum, and expand sampling when mortality varies markedly between units. [3]
+Maine Department of Marine Resources has launched an electronic aquaculture-application portal and will hold a remote information session on 7 October. The session is intended to explain the new system and may be relevant to applicants navigating leases, limited-purpose licences and supporting documentation. [7]
 
-The guidance is designed to make a farm’s loss estimate more scientifically defensible. Document pre-event inventory, sampling selection, live and freshly dead counts, locations and images, and check with an insurer or adjuster before disposing of affected stock where cover may apply. [3]
+For prospective and expanding farms, this is a near-term administrative-readiness task. Review existing site, cultivation and ownership records before using the portal, then treat the session as an opportunity to resolve application-process questions early.
 
 ## Community & Collaboration
 
-### Baltimore terminal joins Chesapeake Bay oyster gardening
+### NOAA launches National Seafood Month with farmed seafood in the message
 
-AMPORTS began participating in the Chesapeake Bay Foundation’s Oyster Gardening Program at its Baltimore Atlantic Terminal this month. Members of the terminal safety team will maintain and monitor spat cages monthly through May 2027; CBF will then collect mature oysters for designated restoration sites in the Patapsco River. [7]
+NOAA Fisheries has marked October as National Seafood Month 2026, describing the United States as a global leader in sustainable seafood from both wild-caught and farmed sources. [4]
 
-The partnership illustrates a practical pathway for waterfront businesses to support restoration: regular husbandry and monitoring are tied to a defined transfer route into a larger restoration programme, rather than presented as a stand-alone symbolic activity.
+The campaign does not itself change demand conditions. It does create a useful, credible frame for farms and seafood businesses to communicate local provenance, seasonal availability, handling standards and the role of responsible aquaculture in domestic seafood supply.
 
 ## Ecosystem Services
 
-### Billion Oyster Project channels its annual event into harbour restoration
+### Maryland sanctuary review reports continued oyster-population gains
 
-Billion Oyster Project’s 24 September event in Brooklyn raised support for its work to restore New York Harbor’s ecosystem and educate future restoration practitioners. The organisation states that every dollar raised supports restoration, community engagement and education activities. [8]
+The Chesapeake Bay Foundation reports that Maryland’s five-year oyster-management review found nearly 40% of oyster sanctuaries either experiencing positive growth or already meeting scientific benchmarks. The report also identifies 16 sanctuaries in the pipeline for further habitat investment and describes record harvest performance in areas open to the public fishery during recent seasons. [3]
 
-The point for the sector is not the event itself but the funding model. Public-facing oyster activity can be structured around a specific restoration and learning mission, linking outreach with durable reef and workforce outcomes rather than only short-term promotion.
+The figures should not be read as a blanket claim for every reef or farm. They do indicate that protected sanctuary habitat, recruitment and sustained restoration investment can coexist with productive adjacent harvest areas when management objectives are kept distinct.
 
 ## Industry Calendar
 
 | Date | Event | Location |
 |---|---|---|
-| **October 1, 2026** | Mississippi 2026–27 public-oyster season opens at legal sunrise in the named areas | Mississippi Sound, Mississippi |
-| **October 3, 2026** | 6th Annual Give a Shuck | Boston, Massachusetts |
-| **October 17, 2026** | 2026 New Jersey Oyster Festival | Port Norris, New Jersey |
-| **October 17–18, 2026** | 60th U.S. Oyster Festival | Leonardtown, Maryland |
+| **October 7, 2026** | Maine DMR Aquaculture Application Portal Information Session | Online · 5–6 pm EDT |
+| **October 17–18, 2026** | 43rd Annual Oyster Fest | Downtown Oyster Bay and Theodore Roosevelt Park, New York |
+| **October 26, 2026** | Aquaculture Horizons 2026 — International Conference & Expo on Aquaculture & Seafood | Event details via Aquaculture North America |
+| **October 30, 2026** | Application deadline: Assistant Hatchery Manager, Downeast Institute | Beals, Maine |
 
 ## Employment Board
 
 | Role | Employer | Location | Application route |
 |---|---|---|---|
-| **Environmental/Natural Resources Specialist II — Shellfish Bureau** | Mississippi Department of Marine Resources | Harrison County, Mississippi | Direct State of Mississippi posting [9] |
+| **Assistant Hatchery Manager** | Downeast Institute for Applied Marine Research & Education | Beals, Maine | Aquaculture employment board listing; application deadline 30 October [8] |
 
 ## Who’s in the News
 
-### Rachel French — Alaska
+### University of Alaska Southeast Sitka — Alaska
 
-**Lead author, *The New Alaska Oyster Growers Manual*.** Alaska Sea Grant identifies Rachel French, a State Fellow, as the primary author of the revised manual for prospective and active oyster growers. [6]
+**New floating mariculture laboratory.** UAS Sitka has added a floating lab designed to combine oyster-seed production, shellfish research and workforce development. [2]
 
-French and the contributing team focused on a readable, accessible update with chapters designed to stand alone, allowing growers to use the material most relevant to their immediate operations. The work makes a broad production and planning resource more usable at farm level.
+The facility’s stated capacity of up to three million oyster seed a year makes it notable for regional operators, while its planned use in coursework provides a practical bridge between hatchery operations and the next generation of mariculture workers.
 
 ## Quote of the Week
 
-> “We cannot yet speak to what the updated oyster harvest regulations will look like, as we are still gathering feedback from stakeholders in the region and will be developing our recommendations based on the state of the resource using their input.” — Pebbles Causseaux, Florida Fish and Wildlife Conservation Commission Division of Marine Fisheries Management [5]
+> “The floating lab takes something that’s been imagined and diligently worked on for a long time and suddenly makes it real.” — Jeremy Rupp, UAS Sitka campus director [2]
 
 ## References
 
-[1]: https://dmr.ms.gov/order-opening-the-2026-2027-oyster-season/ "Order Opening the 2026–2027 Oyster Season — Mississippi Department of Marine Resources"
-[2]: https://www.falmouthma.gov/1098/Open-Shellfishing-Areas "Open Shellfishing Areas — Town of Falmouth, Massachusetts"
-[3]: https://www.arec.vaes.vt.edu/arec/virginia-seafood/programs_research/aquaculture/hab-resources.html "Northampton Shellfish Mortality Response — Virginia Tech"
-[4]: https://www.njassemblygop.com/m/newsflash/Home/Detail/1067 "Assembly Passes Sauickie Bill Supporting New Jersey Seafood Farmers — New Jersey Assembly"
-[5]: https://www.wusf.org/environment/2026-09-26/changes-big-bend-oyster-harvest-could-be-coming "Changes could be coming to the Big Bend oyster harvest — WUSF"
-[6]: https://alaskaseagrant.org/2026/09/revised-oyster-manual-hits-the-shelves/ "Revised oyster manual hits the shelves — Alaska Sea Grant"
-[7]: https://www.amports.com/2026/09/23/amports-joins-chesapeake-bay-foundation-oyster-restoration-effort-at-baltimore-atlantic-terminal/ "AMPORTS joins Chesapeake Bay Foundation oyster restoration effort — AMPORTS"
-[8]: https://www.billionoysterproject.org/upcoming/date/billion-oyster-party-2026-09-24 "Billion Oyster Party 2026 — Billion Oyster Project"
-[9]: https://www.governmentjobs.com/careers/mississippi/jobs/newprint/5315622 "Environmental/Natural Resources Specialist II — State of Mississippi"
+[1]: https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/polluted-area-proclamations "Polluted Area Proclamations — North Carolina Department of Environmental Quality"
+[2]: https://www.alaska.edu/news/system/2026-uas-sitka-new-mariculture-floating-lab.php "UAS Sitka expands hands-on mariculture opportunities with floating lab — University of Alaska"
+[3]: https://www.cbf.org/news/maryland-oyster-sanctuaries-show-widespread-success/ "Maryland Oyster Sanctuaries Show Widespread Success — Chesapeake Bay Foundation"
+[4]: https://www.fisheries.noaa.gov/feature-story/celebrate-national-seafood-month "Celebrate National Seafood Month with NOAA Fisheries"
+[5]: https://www.aquaculturenorthamerica.com/regulation-and-growth/ "Regulation and Growth — Aquaculture North America"
+[6]: https://www.oregon.gov/oda/food-safety/shellfish/pages/shellfish-closures.aspx "Recreational Shellfish Biotoxin Closures — Oregon Department of Agriculture"
+[7]: https://www.maine.gov/dmr/meetings/wed-10072026-1200-aquaculture-application-portal-information-session "Aquaculture Application Portal Information Session — Maine Department of Marine Resources"
+[8]: https://www.instagram.com/p/DdBhQTwiL2h/ "Assistant Hatchery Manager listing — Youth in Blue Economy"
 `,
   briefing: [
-    "The immediate signals are split between a scheduled opening and active disruption. Mississippi’s public season opens 1 October in specified conditionally approved areas, while Massachusetts’ precautionary state-wide closure requires day-of-operation status checks. In Virginia, the current bloom response has shifted from general alert to a documented loss-estimation method.",
-    "The longer-term signal is operational infrastructure. New Jersey has taken an Assembly step toward recognising land-based aquaculture facilities, Alaska Sea Grant has refreshed its practical manual, and oyster-gardening programmes in Baltimore and New York are directing partner and public participation toward restoration outcomes."
+    "The immediate operating priority is sanitation control. North Carolina’s temporary closures cover named waters across five counties, so the latest official map and proclamation should be part of every harvest and dispatch decision. Oregon’s biotoxin notice reinforces the need to communicate closure scope accurately by species, place and market channel.",
+    "The longer-term picture is more constructive. UAS Sitka’s floating laboratory adds production and workforce capacity, Maryland’s sanctuary review reports positive trends across many protected reefs, and National Seafood Month provides a useful public frame for credible domestic farmed-seafood communication."
   ],
   metrics: [
-    { label: "Mississippi public opening", value: "1 Oct", tone: "green" },
-    { label: "Mass. closure", value: "State-wide", tone: "red" },
-    { label: "VIMS baseline sample", value: "20 units / 2%", tone: "neutral" },
-    { label: "NJ aquaculture bill", value: "A4994 passed", tone: "green" }
+    { label: "NC temporary closures", value: "5 counties", tone: "red" },
+    { label: "UAS seed capacity", value: "Up to 3M/year", tone: "green" },
+    { label: "MD sanctuary gains", value: "Nearly 40%", tone: "green" },
+    { label: "National Seafood Month", value: "October", tone: "neutral" }
   ],
-  topSignals: ["Mississippi season order", "Massachusetts precautionary closure", "Virginia loss-estimation guidance", "New Jersey aquaculture definition"],
+  topSignals: ["North Carolina temporary closures", "Alaska oyster-seed capacity", "Maryland sanctuary review", "National Seafood Month"],
   quote: {
-    text: "We cannot yet speak to what the updated oyster harvest regulations will look like, as we are still gathering feedback from stakeholders in the region and will be developing our recommendations based on the state of the resource using their input.",
-    speaker: "Pebbles Causseaux",
-    author: "Pebbles Causseaux",
-    role: "Communications Coordinator, FWC Division of Marine Fisheries Management",
-    context: "On Florida’s continuing Big Bend oyster-harvest rule consultation."
+    text: "The floating lab takes something that’s been imagined and diligently worked on for a long time and suddenly makes it real.",
+    speaker: "Jeremy Rupp",
+    author: "Jeremy Rupp",
+    role: "UAS Sitka Campus Director",
+    context: "On the new floating mariculture laboratory’s role in applied training and regional industry development."
   },
   spotlight: {
-    name: "Rachel French",
-    location: "Alaska",
-    award: "Lead author, The New Alaska Oyster Growers Manual",
-    body: "Alaska Sea Grant identifies State Fellow Rachel French as the primary author of its revised oyster-growers manual for prospective and active farmers.",
-    body2: "The 158-page update brings site selection, production, post-harvest processing, business planning and hazard-planning resources into an accessible operational reference."
+    name: "University of Alaska Southeast Sitka",
+    location: "Sitka, Alaska",
+    award: "New floating mariculture laboratory",
+    body: "UAS Sitka has acquired a floating laboratory to build practical mariculture skills, advance applied research and support local shellfish and seaweed growers.",
+    body2: "The university states that the platform can produce up to three million oyster seed annually and will enter coursework in early 2027."
   }
 };
 
 export const newsItems: NewsItem[] = [
   {
-    id: "mississippi-public-oyster-season-order-2026",
-    title: "Mississippi sets 1 October public-oyster season opening",
+    id: "north-american-aquaculture-regulation-growth-2026",
+    title: "Regulatory complexity remains a growth constraint for aquaculture",
     category: "Industry",
-    region: "Gulf",
-    summary: "Mississippi Department of Marine Resources has ordered the 2026–27 public-oyster season to open at legal sunrise on 1 October in Area I B, Area II B, Area II E and Area V A conditionally approved waters, subject to the order’s conditions.",
-    whyItMatters: "The opening is an area-specific operating signal, not blanket access. Harvest plans should incorporate approval status, handling controls and the order’s Sunday and holiday closures.",
-    sourceName: "Mississippi Department of Marine Resources",
-    sourceUrl: "https://dmr.ms.gov/order-opening-the-2026-2027-oyster-season/"
+    region: "National",
+    summary: "Aquaculture North America reports that North America produced 1% of global aquatic-animal aquaculture output in 2024, despite being the largest seafood importer, and identifies complex approval pathways as a core structural constraint.",
+    whyItMatters: "This is strategic context for oyster operators. Maintain a clear map of approvals, site obligations and renewal dates so administrative complexity does not become an avoidable operational risk.",
+    sourceName: "Aquaculture North America",
+    sourceUrl: "https://www.aquaculturenorthamerica.com/regulation-and-growth/"
   },
   {
-    id: "massachusetts-precautionary-statewide-shellfishing-closure",
-    title: "Massachusetts posts precautionary state-wide shellfishing closure",
-    category: "Regulation",
-    region: "Northeast",
-    summary: "Following notice from Massachusetts Division of Marine Fisheries, a precautionary state-wide shellfishing closure began at sunset on 25 September ahead of the weekend nor’easter and remains in effect until further notice.",
-    whyItMatters: "This is a current harvest, wet-storage and supply-commitment control. Check the latest official status before harvest, loading or dispatch, and retain lot-level traceability.",
-    urgent: true,
-    sourceName: "Town of Falmouth / Massachusetts Division of Marine Fisheries notice",
-    sourceUrl: "https://www.falmouthma.gov/1098/Open-Shellfishing-Areas"
-  },
-  {
-    id: "virginia-hab-shellfish-mortality-estimation-guidance",
-    title: "Virginia issues defensible mortality-estimation guidance",
-    category: "Farm",
-    region: "Mid-Atlantic",
-    summary: "Virginia Tech and VIMS advise shellfish growers responding to the current bloom impacts to estimate losses by size class and farm area, beginning with at least 20 units or 2% per size class and area, then increasing samples where variability is high.",
-    whyItMatters: "Well-documented, randomised counts can turn a sudden loss event into a defensible estimate for farm decision-making and potential insurance or assistance discussions; check insurer requirements first.",
-    urgent: true,
-    sourceName: "Virginia Tech / Virginia Cooperative Extension",
-    sourceUrl: "https://www.arec.vaes.vt.edu/arec/virginia-seafood/programs_research/aquaculture/hab-resources.html"
-  },
-  {
-    id: "new-jersey-a4994-aquaculture-definition-assembly",
-    title: "New Jersey Assembly advances land-based aquaculture definition",
-    category: "Regulation",
-    region: "Mid-Atlantic",
-    summary: "New Jersey Assembly sources report passage of A4994, a bill intended to clarify that the state definition of aquaculture includes land-based facilities alongside marine farms, including the infrastructure that supports shellfish production.",
-    whyItMatters: "The measure is a policy-development signal for hatcheries, nurseries and integrated operations, not a final change in law. Businesses should track its next legislative steps before altering permits or investment plans.",
-    sourceName: "New Jersey Legislative Assembly",
-    sourceUrl: "https://www.njassemblygop.com/m/newsflash/Home/Detail/1067"
-  },
-  {
-    id: "florida-big-bend-oyster-harvest-consultation-2026",
-    title: "Florida continues consultation on Big Bend harvest rules",
+    id: "north-carolina-temporary-shellfish-closures-october-2026",
+    title: "North Carolina closes named shellfish waters across five counties",
     category: "Regulation",
     region: "Southeast",
-    summary: "Feedback at Florida’s third oyster-regulation workshop covered possible changes to seasons, daily bag limits and licence requirements. The agency says it is still gathering input before developing recommendations, with uniform regional changes targeted for 2027.",
-    whyItMatters: "No new rule has been adopted. Farmers and harvesters have an opportunity to convert local experience on access, effort and resource conditions into specific, evidence-led consultation input.",
-    sourceName: "WUSF Public Media",
-    sourceUrl: "https://www.wusf.org/environment/2026-09-26/changes-big-bend-oyster-harvest-could-be-coming"
+    summary: "North Carolina DEQ lists temporary shellfish closures effective 4 October in named waters across Brunswick, New Hanover, Pender, Carteret and Pamlico counties.",
+    whyItMatters: "This is an immediate harvest and traceability control. Verify the latest official proclamation and sanitation map before harvest, loading or dispatch.",
+    urgent: true,
+    sourceName: "North Carolina Department of Environmental Quality",
+    sourceUrl: "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/polluted-area-proclamations"
   },
   {
-    id: "alaska-sea-grant-revised-oyster-growers-manual",
-    title: "Alaska Sea Grant publishes revised oyster-growers manual",
+    id: "uas-sitka-floating-mariculture-lab-oyster-seed-2026",
+    title: "UAS Sitka adds floating lab with stated 3 million oyster-seed capacity",
     category: "Science",
     region: "Alaska",
-    summary: "The 158-page illustrated New Alaska Oyster Growers Manual is now available as a free PDF and, for a limited time, in print. It spans site selection, production, post-harvest processing, business planning and hazard-planning resources.",
-    whyItMatters: "The manual provides a consolidated training and systems-review resource for prospective and active growers. Local rules still prevail, but the workflow guidance is useful when reviewing procedures and onboarding teams.",
-    sourceName: "Alaska Sea Grant",
-    sourceUrl: "https://alaskaseagrant.org/2026/09/revised-oyster-manual-hits-the-shelves/"
+    summary: "UAS Sitka has acquired a floating mariculture laboratory that the university says can cultivate up to 3 million oyster seed annually, alongside seeded line for kelp and other shellfish seed.",
+    whyItMatters: "The platform combines hatchery capacity, applied research and workforce skills development, creating a more direct regional link between training and production infrastructure.",
+    sourceName: "University of Alaska",
+    sourceUrl: "https://www.alaska.edu/news/system/2026-uas-sitka-new-mariculture-floating-lab.php"
   },
   {
-    id: "amports-cbf-baltimore-oyster-gardening-2026",
-    title: "Baltimore terminal joins Chesapeake Bay oyster gardening",
-    category: "Community",
-    region: "Mid-Atlantic",
-    summary: "AMPORTS has started participating in Chesapeake Bay Foundation’s Oyster Gardening Program at its Baltimore Atlantic Terminal. Terminal staff will maintain and monitor spat cages monthly through May 2027 before mature oysters are moved to Patapsco River restoration sites.",
-    whyItMatters: "The partnership connects regular husbandry by a waterfront employer with a defined pathway into restoration, offering a practical model for place-based corporate and community participation.",
-    sourceName: "AMPORTS",
-    sourceUrl: "https://www.amports.com/2026/09/23/amports-joins-chesapeake-bay-foundation-oyster-restoration-effort-at-baltimore-atlantic-terminal/"
-  },
-  {
-    id: "billion-oyster-project-party-restoration-support-2026",
-    title: "Billion Oyster Project directs event support to harbour restoration",
-    category: "Ecosystem",
+    id: "maine-aquaculture-application-portal-information-session-2026",
+    title: "Maine opens information session for new aquaculture-application portal",
+    category: "Farm",
     region: "Northeast",
-    summary: "Billion Oyster Project says proceeds from its 24 September Brooklyn event support restoration, community engagement and education in its work to restore New York Harbor’s ecosystem.",
-    whyItMatters: "The model links public-facing oyster activity to a specified restoration and learning mission, helping move engagement beyond promotion toward durable reef and workforce outcomes.",
-    sourceName: "Billion Oyster Project",
-    sourceUrl: "https://www.billionoysterproject.org/upcoming/date/billion-oyster-party-2026-09-24"
+    summary: "Maine DMR has launched an electronic aquaculture-application portal and scheduled a remote information session for 7 October to explain the new system.",
+    whyItMatters: "Applicants should prepare site, cultivation and supporting records before using the portal, then use the session to resolve process questions before submitting a lease or licence application.",
+    sourceName: "Maine Department of Marine Resources",
+    sourceUrl: "https://www.maine.gov/dmr/meetings/wed-10072026-1200-aquaculture-application-portal-information-session"
+  },
+  {
+    id: "noaa-national-seafood-month-2026",
+    title: "NOAA opens National Seafood Month with farmed seafood in focus",
+    category: "Community",
+    region: "National",
+    summary: "NOAA Fisheries has opened National Seafood Month 2026, positioning sustainable farmed and wild-caught American seafood within the campaign’s October outreach programme.",
+    whyItMatters: "The campaign provides an established public-engagement frame for farms, dealers and associations to communicate origin, responsible production and seasonal availability.",
+    sourceName: "NOAA Fisheries",
+    sourceUrl: "https://www.fisheries.noaa.gov/feature-story/celebrate-national-seafood-month"
+  },
+  {
+    id: "maryland-oyster-sanctuaries-five-year-review-2026",
+    title: "Maryland sanctuary review reports widespread oyster-population gains",
+    category: "Ecosystem",
+    region: "Mid-Atlantic",
+    summary: "Chesapeake Bay Foundation reports that Maryland’s latest five-year oyster-management review found nearly 40% of sanctuaries have positive growth or meet scientific benchmarks, with 16 more slated for habitat investment.",
+    whyItMatters: "The signal supports management approaches that sustain protected reef habitat alongside separate harvest areas, while recognising that results will vary across individual reefs and locations.",
+    sourceName: "Chesapeake Bay Foundation",
+    sourceUrl: "https://www.cbf.org/news/maryland-oyster-sanctuaries-show-widespread-success/"
+  },
+  {
+    id: "oregon-shellfish-biotoxin-status-october-2026",
+    title: "Oregon separates recreational biotoxin controls from commercial product safety",
+    category: "Regulation",
+    region: "Pacific Northwest",
+    summary: "Oregon’s 2 October status update reports a recreational razor-clam closure for domoic acid while stating commercial shellfish products remain safe for consumers.",
+    whyItMatters: "Safety communications should name the precise species, waters and harvest channel involved, rather than generalising a recreational closure to all commercial shellfish.",
+    sourceName: "Oregon Department of Agriculture",
+    sourceUrl: "https://www.oregon.gov/oda/food-safety/shellfish/pages/shellfish-closures.aspx"
   }
 ];
 
 export const calendarEvents: CalendarEvent[] = [
   {
-    id: "mississippi-public-oyster-opening-2026",
-    title: "Mississippi public-oyster season opening",
-    isoDate: "2026-10-01T06:30:00-05:00",
-    dateLabel: "October 1, 2026 · legal sunrise",
-    location: "Mississippi Sound, Mississippi",
-    note: "MDMR’s 2026–27 public-oyster season opens in the named conditionally approved areas, subject to the order’s requirements and closures.",
-    url: "https://dmr.ms.gov/order-opening-the-2026-2027-oyster-season/"
+    id: "maine-aquaculture-application-portal-session-2026",
+    title: "Maine DMR Aquaculture Application Portal Information Session",
+    isoDate: "2026-10-07T17:00:00-04:00",
+    dateLabel: "October 7, 2026 · 5–6 pm EDT",
+    location: "Online",
+    note: "A remote session explaining Maine DMR’s new electronic aquaculture application portal for prospective and current applicants.",
+    url: "https://www.maine.gov/dmr/meetings/wed-10072026-1200-aquaculture-application-portal-information-session"
   },
   {
-    id: "mass-oyster-project-give-a-shuck-2026",
-    title: "6th Annual Give a Shuck",
-    isoDate: "2026-10-03T14:00:00-04:00",
-    dateLabel: "October 3, 2026 · 2–5 pm EDT",
-    location: "Boston, Massachusetts",
-    note: "Massachusetts Oyster Project fundraiser with local oyster farmers, chefs and live music, supporting coastal-strengthening work.",
-    url: "https://www.massoyster.org/get-involved/events"
-  },
-  {
-    id: "new-jersey-oyster-festival-2026",
-    title: "2026 New Jersey Oyster Festival",
-    isoDate: "2026-10-17T12:00:00-04:00",
-    dateLabel: "October 17, 2026 · noon–5 pm EDT",
-    location: "Port Norris, New Jersey",
-    note: "Bayshore Center at Bivalve’s annual event celebrates New Jersey’s oyster heritage on the Delaware Bay waterfront.",
-    url: "https://www.bayshorecenter.org/upcoming-event/2026-new-jersey-oyster-festival/"
-  },
-  {
-    id: "us-oyster-festival-2026",
-    title: "60th U.S. Oyster Festival",
+    id: "oyster-bay-oyster-fest-2026",
+    title: "43rd Annual Oyster Fest",
     isoDate: "2026-10-17T10:00:00-04:00",
     dateLabel: "October 17–18, 2026",
-    location: "Leonardtown, Maryland",
-    note: "Hosted by the Rotary Club of Lexington Park, the festival includes the U.S. National Oyster Shucking Championship.",
-    url: "https://www.usoysterfestival.org/"
+    location: "Oyster Bay, New York",
+    note: "The annual Oyster Bay community event returns to downtown Oyster Bay and Theodore Roosevelt Park, with local oysters, shell recycling and oyster heritage in the programme.",
+    url: "https://libn.com/2026/10/02/oyster-fest-returns-to-oyster-bay-oct-17-and-18/"
+  },
+  {
+    id: "aquaculture-horizons-2026",
+    title: "Aquaculture Horizons 2026",
+    isoDate: "2026-10-26T09:00:00-04:00",
+    dateLabel: "October 26, 2026",
+    location: "See event organiser details",
+    note: "International conference and expo on aquaculture and seafood, listed in Aquaculture North America’s upcoming-events calendar.",
+    url: "https://www.aquaculturenorthamerica.com/regulation-and-growth/"
+  },
+  {
+    id: "downeast-institute-hatchery-manager-deadline-2026",
+    title: "Assistant Hatchery Manager application deadline",
+    isoDate: "2026-10-30T23:59:00-04:00",
+    dateLabel: "October 30, 2026",
+    location: "Beals, Maine",
+    note: "Deadline for the Downeast Institute Assistant Hatchery Manager opportunity in shellfish aquaculture, hatchery production and applied marine research.",
+    url: "https://www.instagram.com/p/DdBhQTwiL2h/"
   }
 ];
 
 export const jobs: JobPost[] = [
   {
-    id: "mississippi-shellfish-bureau-specialist-2026",
-    role: "Environmental/Natural Resources Specialist II — Shellfish Bureau",
-    employer: "Mississippi Department of Marine Resources",
-    location: "Harrison County, Mississippi",
-    compensation: "US$40,286.40–44,315.04/year",
-    deadline: "Closes Sep 30 · 11:59 pm CT",
-    applyUrl: "https://www.governmentjobs.com/careers/mississippi/jobs/newprint/5315622",
-    summary: "Full-time, time-limited scientific role covering on- and off-bottom oyster-aquaculture techniques, shellfish harvest and handling procedures, and Shellfish Resource Management and Oyster Aquaculture programs."
+    id: "downeast-institute-assistant-hatchery-manager-october-2026",
+    role: "Assistant Hatchery Manager",
+    employer: "Downeast Institute for Applied Marine Research & Education",
+    location: "Beals, Maine",
+    compensation: "Not stated in the public listing",
+    deadline: "October 30, 2026",
+    applyUrl: "https://jobs.rwfm.tamu.edu/",
+    summary: "Shellfish aquaculture and hatchery-management role combining hatchery production, applied marine research and team leadership. The public listing directs candidates to the aquaculture employment board for the application route."
   }
 ];
